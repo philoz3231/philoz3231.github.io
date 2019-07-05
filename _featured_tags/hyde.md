@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Hyde
-slug: hyde
+title: 개발
+slug: 개발
 menu: true
 order: 1
 description: >

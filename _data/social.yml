@@ -101,7 +101,7 @@ ondrive:
   name: OneDrive
   icon: icon-ondrive
 github:
-  name: GitHub
+  name: philoz3231
   icon: icon-github
   prepend: "https://github.com/"
 npm:

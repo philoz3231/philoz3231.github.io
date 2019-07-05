@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Hydejack
-slug: hydejack
+title: 블로그
+slug: 블로그
 menu: true
 order: 2
 description: >
