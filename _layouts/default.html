@@ -28,13 +28,9 @@ layout: base
   <header>
     <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
     {% include message.html text=page.description hide=page.hide_description %}
+    <p>IT 개발, 서비스 관련 논의 대환영</p>
   </header>
 
-  {{ content }}
-
-  <hr class="dingbat">
-    <p>Jekyll 블로그입니다</p>
-  </hr>
   {% if site.posts.size > 0 %}
     <h2 class="hr">{{ strings.posts | default:"Posts" }}</h2>
     <ul class="related-posts">
@@ -44,19 +40,4 @@ layout: base
     </ul>
   {% endif %}
 
-  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
-  {% if pages.size > 0 %}
-    <h2 class="hr">{{ strings.pages | default:"Pages" }}</h2>
-    <ul class="related-posts">
-      {% for page in pages limit:5 %}
-        {% if page.layout == 'page' %}
-          <li class="h4">
-            <a href="{{ page.url | relative_url }}" class="flip-title">
-              <span>{{ page.title }}</span>
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endif %}
 </article>

@@ -3,7 +3,7 @@ layout: page
 title: 사용법
 description: >
   Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
-menu: true
+#menu: true
 order: 5
 ---
 
