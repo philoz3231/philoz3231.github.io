@@ -2,7 +2,7 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <Junho> <Kim>
+  name:              Junho Kim
   email:             
 
   # Used at the bottom of each page and at the top of the `about` layout
@@ -12,11 +12,11 @@ author1:
 
   # This photo will be used in the about section
   picture:
-    path:            https://placehold.it/128x128
+    path:            https://avatars0.githubusercontent.com/u/11412609?s=400&u=575b6bc76e5fd6213c95768e8b25784564e92148&v=4
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+      1x:            https://avatars0.githubusercontent.com/u/11412609?s=400&u=575b6bc76e5fd6213c95768e8b25784564e92148&v=4
+      2x:            https://avatars0.githubusercontent.com/u/11412609?s=400&u=575b6bc76e5fd6213c95768e8b25784564e92148&v=4
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
