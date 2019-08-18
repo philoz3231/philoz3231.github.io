@@ -1,12 +1,10 @@
 ---
 layout: post
 title: 마크다운 작성 예제
-description: >
-  This is a normal paragraph following a header.
-  GitHub is a code hosting platform for version control and collaboration.
-  It lets you and others work together on projects from anywhere.
+description: 
 tags: [develop]
 ---
+
 ```
 Markdown 언어 작성을 위한 예제로 남겨둠
 hydejack 기본 템플릿에서 제공해주는 예제임
