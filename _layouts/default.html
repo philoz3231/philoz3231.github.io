@@ -34,7 +34,7 @@ layout: base
   {% if site.posts.size > 0 %}
     <h2 class="hr">{{ strings.posts | default:"Posts" }}</h2>
     <ul class="related-posts">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts %}
         {% include post-list-item.html post=post %}
       {% endfor %}
     </ul>
