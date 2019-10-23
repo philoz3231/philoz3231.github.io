@@ -7,8 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=1081
 permalink: '/2018/05/14/%ec%b9%b4%ed%8e%98%eb%a5%bc-%ea%b3%a0%eb%a5%b4%eb%8a%94-%ea%b8%b0%ec%a4%80/'
 image: /wp-content/uploads/2018/05/20150922072940760925-604x147.png
-categories:
-  - Life
+tags: [blog]
+categories: [blog]
 ---
 <img class="aligncenter size-full wp-image-1083" src="/assets/wp-content/uploads/2018/05/20150922072940760925.png" alt="" width="800" height="195">
 
@@ -23,11 +23,11 @@ categories:
 거리가 조금 멀어도 스타벅스까지 걸어가는 이유다.
 <blockquote>1. 일관된 맛
 
-2. 확실한 포인트, 사이렌 오더
+1. 확실한 포인트, 사이렌 오더
 
-3. 확실히 잘 터지는 와이파이
+2. 확실히 잘 터지는 와이파이
 
-4. 매장사이즈, 분위기</blockquote>
+3. 매장사이즈, 분위기</blockquote>
 잘 모르겠지만 분위기는 매장크기, 인테리어와 조명, 브랜드의 영향을 받는 것 같다. 그에 따라 카페를 찾는 고객의 연령층이 달라지고 이는 다시 매장의 분위기에 영향을 주는 구조인 듯 하다.
 
 브랜드 구축이 얼마나 힘든지, 그리고 완성된 브랜드가 가지고 있는 파워가 얼마나되는지를 깨닫게 되는 미세먼지 가득한 밤이다.

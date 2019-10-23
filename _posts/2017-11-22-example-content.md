@@ -3,6 +3,7 @@ layout: post
 title: 마크다운 작성 예제
 description: 
 tags: [develop]
+categories: [develop, markdown]
 ---
 
 ```

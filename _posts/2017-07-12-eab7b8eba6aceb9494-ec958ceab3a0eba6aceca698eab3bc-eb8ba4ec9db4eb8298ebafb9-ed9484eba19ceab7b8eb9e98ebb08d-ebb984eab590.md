@@ -6,10 +6,9 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=751
 permalink: '/2017/07/12/%ea%b7%b8%eb%a6%ac%eb%94%94-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98%ea%b3%bc-%eb%8b%a4%ec%9d%b4%eb%82%98%eb%af%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%eb%b9%84%ea%b5%90/'
-image: /wp-content/uploads/2017/07/스크린샷-2017-07-12-오전-2.26.48.png
-categories:
-  - algorithm
-  - Development
+image: /wp-content/uploads/2017/07/-2017-07-12-오전-2.26.48.png
+tags: [develop]
+categories: [develop, algorithm]
 ---
 그리디 알고리즘은 DP의 special case라고 할 수 있겠지만 몇 가지 조건이 있기 때문에 DP와는 구별된다.
 
@@ -29,7 +28,7 @@ categories:
 문제를 하위 문제로 나누어 풀 때, <strong>중복되는 하위문제</strong>가 발생한다는 개념이다. 대표적으로 피보나치 수열을 생각해보면 된다.
 피보나치 수열의 경우 아래와 같이 겹치는 연산이 발생한다. DP의 경우 이것을 해결하기 위해 Memoization, Tabulation을 사용하여 중복된 계산을 막는 것이다.
 
-[caption id="attachment_761" align="alignright" width="807"]<img class="size-full wp-image-761" src="/assets/wp-content/uploads/2017/07/스크린샷-2017-07-12-오전-2.26.48.png" alt="" width="807" height="323"> Duplicate calculation in Fibonacci number[/caption]
+[caption id="attachment_761" align="alignright" width="807"]<img class="size-full wp-image-761" src="/assets/wp-content/uploads/2017/07/-2017-07-12-오전-2.26.48.png" alt="" width="807" height="323"> Duplicate calculation in Fibonacci number[/caption]
 
 2. Optimal substructure
 그리디 알고리즘의 설명과 같다.

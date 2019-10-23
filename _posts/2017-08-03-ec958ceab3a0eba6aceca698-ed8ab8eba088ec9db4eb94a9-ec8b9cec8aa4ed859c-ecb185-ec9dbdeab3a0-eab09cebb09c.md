@@ -1,15 +1,14 @@
 ---
 id: 895
-title: 알고리즘 트레이딩 시스템, 책 읽고 개발
+title: 알고리즘 트레이딩 시스템
 date: 2017-08-03T22:01:41+09:00
 author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=895
 permalink: '/2017/08/03/%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-%ed%8a%b8%eb%a0%88%ec%9d%b4%eb%94%a9-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%b1%85-%ec%9d%bd%ea%b3%a0-%ea%b0%9c%eb%b0%9c/'
 image: /wp-content/uploads/2017/08/E2817314825_l.jpg
-categories:
-  - Books
-  - Development
+tags: [develop]
+categories: [develop, book]
 ---
 [caption id="attachment_896" align="alignright" width="211"]<img class="size-medium wp-image-896" src="/assets/wp-content/uploads/2017/08/E2817314825_l-211x300.jpg" alt="" width="211" height="300"> ©한빛미디어[/caption]
 
@@ -31,7 +30,7 @@ categories:
 
 아래는 책에서 소개한 구현 내용과 내가 간단히 수정해서 사용한 부분이다.
 
-[caption id="attachment_900" align="aligncenter" width="631"]<img class="size-full wp-image-900" src="/assets/wp-content/uploads/2017/08/스크린샷-2017-08-03-오후-9.50.42.png" alt="" width="631" height="438"> 일반적으로 쓰이는 트레이딩 시스템의 구성이라고 한다[/caption]
+[caption id="attachment_900" align="aligncenter" width="631"]<img class="size-full wp-image-900" src="/assets/wp-content/uploads/2017/08/-2017-08-03-오후-9.50.42.png" alt="" width="631" height="438"> 일반적으로 쓰이는 트레이딩 시스템의 구성이라고 한다[/caption]
 
 [caption id="attachment_901" align="alignright" width="800"]<img class="size-full wp-image-901" src="/assets/wp-content/uploads/2017/08/-2017-08-03-오후-9.51.16-e1501765179875.png" alt="" width="800" height="330"> 책에서 실제 구현된 내용이다. 파이썬과 MySQL을 통해 구현됐다[/caption]
 

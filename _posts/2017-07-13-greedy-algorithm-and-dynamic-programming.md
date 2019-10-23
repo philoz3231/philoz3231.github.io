@@ -32,7 +32,7 @@ When divide the original problem to subproblems, you can get the solution if all
 1. Overlapping Subproblems
 When you divide the problem to subproblems, duplicate subproblems can be made. Typical example is Fibonacci series. You can see the duplicate calculations in the picture. 
 DP uses memoization or tabulation to avoid duplicate calculations.
-[caption id="attachment_761" align="alignright" width="807"]<img src="/assets/wp-content/uploads/2017/07/스크린샷-2017-07-12-오전-2.26.48.png" alt="" width="807" height="323" class="size-full wp-image-761" /> Duplicate calculation in Fibonacci number[/caption]
+[caption id="attachment_761" align="alignright" width="807"]<img src="/assets/wp-content/uploads/2017/07/-2017-07-12-오전-2.26.48.png" alt="" width="807" height="323" class="size-full wp-image-761" /> Duplicate calculation in Fibonacci number[/caption]
 
 2. Optimal substructure
 Same with Greedy algorithm

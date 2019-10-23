@@ -7,9 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=1073
 permalink: /en/2018/02/17/errors-when-installing-rails-on-mac-osx/
 image: /wp-content/uploads/2018/02/4223-1-270x270.png
-categories:
-  - rails
-  - web
+tags: [develop]
+categories: [develop, rails]
 ---
 When I installing rails recent version on my mac osx high sierra, there are two errors. So, I find how to solve the problems.
 

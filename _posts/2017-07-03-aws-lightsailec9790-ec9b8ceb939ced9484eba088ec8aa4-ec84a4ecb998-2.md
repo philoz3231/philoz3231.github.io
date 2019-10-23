@@ -7,9 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=123
 permalink: '/2017/07/03/aws-lightsail%ec%97%90-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%84%a4%ec%b9%98-2/'
 image: /wp-content/uploads/2017/07/2017-07-03-오전-1.37.37.png
-categories:
-  - Development
-  - wordpress
+tags: [develop]
+categories: [develop, wordpress]
 ---
 <blockquote>2. 운영자메뉴 접속</blockquote>
 생성된 인스턴스의 ip 주소로 워드프레스가 접속된다면 하단에 아이콘 혹은 ip주소/wp-admin 입력을 통해서 운영자화면으로 이동할 수 있다.
@@ -18,7 +17,7 @@ categories:
 
 운영자메뉴로 접속하기 위해서는 아이디와 비밀번호가 필요하다. 워드프레스 기본 아이디는 user 이며 비밀번호는 lightsail의 콘솔을 통해 확인할 수 있다.
 
-<img class="alignnone size-medium wp-image-538" src="/assets/wp-content/uploads/2017/07/스크린샷-2017-07-03-오전-1.33.58-300x93.png" alt="" width="300" height="93">
+<img class="alignnone size-medium wp-image-538" src="/assets/wp-content/uploads/2017/07/-2017-07-03-오전-1.33.58-300x93.png" alt="" width="300" height="93">
 여기서 &gt;_ 모양의 아이콘을 클릭하면 콘솔을 통해 서버에 원격접속할 수 있다.
 
 bitnami 어쩌구라고 나오는데 여기에 cat bitnami_application_password 라고 입력하면 워드프레스의 비밀번호가 출력된다.

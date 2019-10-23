@@ -7,8 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=1060
 permalink: '/2018/02/12/%ea%b1%b8%ec%98%a8%eb%8d%94%ed%8a%b8%eb%a0%88%ec%9d%b8-%eb%82%98%eb%a5%bc-%ec%b0%be%ec%95%84%ec%a4%98-%ec%9d%b4%ed%9b%84%ec%9d%98-%ec%8a%a4%eb%a6%b4%eb%9f%ac/'
 image: /wp-content/uploads/2018/02/54464235-180x270.jpg
-categories:
-  - Books
+tags: [blog]
+categories: [blog, book]
 ---
 [caption id="attachment_1061" align="alignright" width="200"]<img class="wp-image-1061 size-medium" src="/assets/wp-content/uploads/2018/02/54464235-200x300.jpg" alt="" width="200" height="300"> ©북폴리오[/caption]
 

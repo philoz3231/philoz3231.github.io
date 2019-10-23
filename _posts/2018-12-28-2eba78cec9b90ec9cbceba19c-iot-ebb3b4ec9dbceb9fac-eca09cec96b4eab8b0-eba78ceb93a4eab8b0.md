@@ -13,9 +13,8 @@ enclosure:
     video/mp4
     
 image: /wp-content/uploads/2018/12/microbots-push-screen7-item-on-light-switch-with-device-1024x768-1-360x270.png
-categories:
-  - Development
-  - IoT
+tags: [develop]
+categories: [develop, arduino]
 ---
 <!-- wp:paragraph -->
 <p>최근 이것저것 IoT 제품들을 구매하여 스마트홈을 구축해보고 있었지만, 제일 필요했던 것은 보일러 제어기였다.</p>

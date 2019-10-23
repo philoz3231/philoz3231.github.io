@@ -6,9 +6,8 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=851
 permalink: /en/2017/07/23/sorting-algorithm-code/
-categories:
-  - algorithm
-  - Development
+tags: [develop]
+categories: [develop, algorithm]
 ---
 Sorting Algorithm code with Java.
 

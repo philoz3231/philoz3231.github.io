@@ -7,8 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=926
 permalink: '/2017/08/13/%ec%b9%b4%ec%b9%b4%ec%98%a4%eb%b1%85%ed%81%ac-%ec%b2%b4%ed%81%ac%ec%b9%b4%eb%93%9c-%eb%8f%84%ec%b0%a9/'
 image: /wp-content/uploads/2017/08/IMG_4934-1200x900.jpg
-categories:
-  - Life
+tags: [blog]
+categories: [blog]
 ---
 [caption id="attachment_927" align="aligncenter" width="840"]<img class="size-large wp-image-927" src="/assets/wp-content/uploads/2017/08/IMG_4934-1024x768.jpg" alt="" width="840" height="630"> 카카오뱅크 체크카드 중 무지![/caption]
 

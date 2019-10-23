@@ -6,13 +6,13 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=1088
 permalink: '/2018/06/30/vm-vagrant-docker-%ea%b0%9c%eb%85%90/'
-image: /wp-content/uploads/2018/06/스크린샷-2018-06-30-오후-2.27.41-584x270.png
-categories:
-  - Development
+image: /wp-content/uploads/2018/06/-2018-06-30-오후-2.27.41-584x270.png
+tags: [develop]
+categories: [develop]
 ---
 간단하게(거칠게?) 이해한 바를 바탕으로 정리해둠.
 
-[caption id="attachment_1092" align="aligncenter" width="299"]<img class="wp-image-1092" src="/assets/wp-content/uploads/2018/06/스크린샷-2018-06-30-오후-2.27.21.png" alt="" width="299" height="458"> Virtual Machine Concept[/caption]
+[caption id="attachment_1092" align="aligncenter" width="299"]<img class="wp-image-1092" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.21.png" alt="" width="299" height="458"> Virtual Machine Concept[/caption]
 <blockquote>1. Virtual Machine(Virtual Machine, VM ware 등)</blockquote>
 버츄얼 머신(VM)은 기존 OS(Host OS) 위에서 가상의 OS(Guest OS)를 얹혀놓은 형태. 가상 OS의 모든 기능을 사용할 수 있지만 OS를 두번 거치는 형태이기 때문에 속도가 느림.
 Hypervisor
@@ -22,14 +22,14 @@ Hypervisor
 참고
 
 &nbsp;<a href="https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80">https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80</a>
-<img class="aligncenter wp-image-1093" src="/assets/wp-content/uploads/2018/06/스크린샷-2018-06-30-오후-2.27.29.png" alt="" width="483" height="454">
+<img class="aligncenter wp-image-1093" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.29.png" alt="" width="483" height="454">
 <blockquote>2. Vagrant</blockquote>
 VM 관리를 편하게 하기 위해 필요한 오픈소스 관리 툴. VM 내의 다양한 환경설정, 프로그램들을 미리 설정하고 설치할 수 있게 함. 사용하기 위해서는 Virtual Box 등이 설치되어있어야 함.
 
 참고
 <a href="https://www.lesstif.com/pages/viewpage.action?pageId=24445417">https://www.lesstif.com/pages/viewpage.action?pageId=24445417</a>
 
-<img class="aligncenter wp-image-1091" src="/assets/wp-content/uploads/2018/06/스크린샷-2018-06-30-오후-2.27.36.png" alt="" width="312" height="422">
+<img class="aligncenter wp-image-1091" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.36.png" alt="" width="312" height="422">
 <blockquote>3. Docker</blockquote>
 프로그램 개발 시 각종 어플리케이션 버전, 환경설정 등을 편하게 하기 위해 개발된 application 관리 툴. 리눅스의 container기술을 활용해서 시스템 내에서 완전히 분리된 환경에서 어플리케이션이 구동됨.
 
@@ -41,4 +41,4 @@ VM 관리를 편하게 하기 위해 필요한 오픈소스 관리 툴. VM 내�
 
 &nbsp;
 
-[caption id="attachment_1090" align="aligncenter" width="710"]<img class="wp-image-1090 size-full" src="/assets/wp-content/uploads/2018/06/스크린샷-2018-06-30-오후-2.27.41.png" alt="" width="710" height="328"> 전체 개념도[/caption]
+[caption id="attachment_1090" align="aligncenter" width="710"]<img class="wp-image-1090 size-full" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.41.png" alt="" width="710" height="328"> 전체 개념도[/caption]

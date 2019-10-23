@@ -6,9 +6,8 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=588
 permalink: /en/2017/07/03/is-dynamic-programming-included-in-divide-and-conquer-algorithm/
-categories:
-  - algorithm
-  - Development
+tags: [develop]
+categories: [develop, algorithm]
 ---
 I was wonder whether DP(dynamic programming) is included in divide and conquer algorithm.
 
@@ -23,7 +22,7 @@ Divide and Conquer's substructure - independent(sub-problems influence each othe
 Therefore, we could say both algorithm go through divide, conquer, and combine "steps". 
 BUT, Two algorithm do not contain each algorithm. 
 
-[caption id="attachment_753" align="aligncenter" width="717"]<img src="/assets/wp-content/uploads/2017/07/스크린샷-2017-07-12-오전-2.05.54.png" alt="" width="717" height="454" class="size-full wp-image-753" /> Dynamic programming VS Divide and Conquer algorithm[/caption]
+[caption id="attachment_753" align="aligncenter" width="717"]<img src="/assets/wp-content/uploads/2017/07/-2017-07-12-오전-2.05.54.png" alt="" width="717" height="454" class="size-full wp-image-753" /> Dynamic programming VS Divide and Conquer algorithm[/caption]
 
 This diagram distributes DP and divide&conquer algorithm.
 

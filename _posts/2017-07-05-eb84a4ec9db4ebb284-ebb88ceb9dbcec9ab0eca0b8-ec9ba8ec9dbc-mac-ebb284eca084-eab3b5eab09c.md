@@ -6,11 +6,11 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=603
 permalink: '/2017/07/05/%eb%84%a4%ec%9d%b4%eb%b2%84-%eb%b8%8c%eb%9d%bc%ec%9a%b0%ec%a0%b8-%ec%9b%a8%ec%9d%bc-mac-%eb%b2%84%ec%a0%84-%ea%b3%b5%ea%b0%9c/'
-image: /wp-content/uploads/2017/07/스크린샷-2017-07-05-오후-11.10.25.png
-categories:
-  - IT news
+image: /wp-content/uploads/2017/07/-2017-07-05-오후-11.10.25.png
+tags: [blog]
+categories: [blog, news]
 ---
-[caption id="attachment_604" align="alignnone" width="405"]<img class="size-full wp-image-604" src="/assets/wp-content/uploads/2017/07/스크린샷-2017-07-05-오후-11.10.25.png" alt="" width="405" height="422"> 네이버 웨일의 새 로고[/caption]
+[caption id="attachment_604" align="alignnone" width="405"]<img class="size-full wp-image-604" src="/assets/wp-content/uploads/2017/07/-2017-07-05-오후-11.10.25.png" alt="" width="405" height="422"> 네이버 웨일의 새 로고[/caption]
 
 네이버에서 만든 웹브라우져 웨일의 Mac 버전이 6월 28일 공개되었습니다.
 
@@ -26,7 +26,7 @@ categories:
 
 [caption id="attachment_605" align="alignnone" width="840"]<img class="size-large wp-image-605" src="/assets/wp-content/uploads/2017/07/Screenshot-2017-07-05-at-23.08.11-1024x576.png" alt="" width="840" height="473"> 웨일 시작화면.[/caption]
 
-[caption id="attachment_606" align="alignnone" width="840"]<img class="size-large wp-image-606" src="/assets/wp-content/uploads/2017/07/스크린샷-2017-07-05-오후-11.08.35-1024x537.png" alt="" width="840" height="441"> 웨일 웹스토어. 개장한지 얼마 안되어 아직 전용앱이 많지 않다.[/caption]
+[caption id="attachment_606" align="alignnone" width="840"]<img class="size-large wp-image-606" src="/assets/wp-content/uploads/2017/07/-2017-07-05-오후-11.08.35-1024x537.png" alt="" width="840" height="441"> 웨일 웹스토어. 개장한지 얼마 안되어 아직 전용앱이 많지 않다.[/caption]
 
 개발관련기사
 <a href="http://www.zdnet.co.kr/news/news_view.asp?artice_id=20161124141443" target="_blank" rel="noopener">웨일 개발초기 관련기사- "네이버 브라우저, 구글·애플 다 품은 사연"</a>

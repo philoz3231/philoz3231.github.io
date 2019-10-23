@@ -6,8 +6,8 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=748
 permalink: /en/2017/07/12/spiderman-homecoming-ending-ost/
-categories:
-  - Life
+tags: [blog]
+categories: [blog]
 ---
 [caption id="attachment_742" align="aligncenter" width="840"]<img src="/assets/wp-content/uploads/2017/07/spiderman-1024x576.jpg" alt="" width="840" height="473" class="size-large wp-image-742" /> Our friendly neighborhood Spiderman has returned to become teenager [/caption]
 

@@ -7,10 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=1070
 permalink: '/2018/02/17/mac-osx%ec%97%90-%eb%a3%a8%eb%b9%84%ec%98%a8%eb%a0%88%ec%9d%bc%ec%a6%88-%ec%84%a4%ec%b9%98-%ec%8b%9c-%ec%98%a4%eb%a5%98/'
 image: /wp-content/uploads/2018/02/4223-270x270.png
-categories:
-  - Development
-  - rails
-  - web
+tags: [develop]
+categories: [develop, rails]
 ---
 맥 OS 하이시에라에서 최신버전의 루비온레일즈를 설치하면서 오류가 발생했다.
 그 전 4.1.6버전 레일즈는 정상적으로 프로젝트 생성이 되었지만 최신 버전에선 두가지 오류가 있어서 해결방법을 적어둔다. 기본적인 설치는 처음 링크에 나온대로 터미널을 통해 설치하면 된다.

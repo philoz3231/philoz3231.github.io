@@ -7,8 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=741
 permalink: '/2017/07/10/%ec%8a%a4%ed%8c%8c%ec%9d%b4%eb%8d%94%eb%a7%a8-%ed%99%88%ec%bb%a4%eb%b0%8d-%ec%97%94%eb%94%a9ost/'
 image: /wp-content/uploads/2017/07/spiderman-1200x675.jpg
-categories:
-  - Life
+tags: [blog]
+categories: [blog]
 ---
 [caption id="attachment_742" align="aligncenter" width="840"]<img class="size-large wp-image-742" src="/assets/wp-content/uploads/2017/07/spiderman-1024x576.jpg" alt="" width="840" height="473"> 친절한 이웃 스파이더맨이 10대가 되어 돌아왔다[/caption]
 

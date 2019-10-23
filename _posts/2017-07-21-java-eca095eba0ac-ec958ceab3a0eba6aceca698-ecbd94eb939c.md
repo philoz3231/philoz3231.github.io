@@ -6,9 +6,8 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=833
 permalink: '/2017/07/21/java-%ec%a0%95%eb%a0%ac-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-%ec%bd%94%eb%93%9c/'
-categories:
-  - algorithm
-  - Development
+tags: [develop]
+categories: [develop, algorithm]
 ---
 각 정렬 알고리즘 코드이다.
 

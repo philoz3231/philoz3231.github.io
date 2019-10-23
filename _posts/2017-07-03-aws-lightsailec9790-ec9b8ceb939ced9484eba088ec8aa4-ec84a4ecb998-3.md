@@ -7,9 +7,8 @@ layout: post
 guid: http://localhost/wordpress/?p=129
 permalink: '/2017/07/03/aws-lightsail%ec%97%90-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%84%a4%ec%b9%98-3/'
 image: /wp-content/uploads/2017/07/2017-07-03-오전-1.33.07-1200x551.png
-categories:
-  - Development
-  - wordpress
+tags: [develop]
+categories: [develop, wordpress]
 ---
 <blockquote>3-2. 도메인 연결</blockquote>
 이제 lightsail에 내가 구매한 도메인이 있다는 사실을 알려주고 해당 도메인과 sub domain을 생성된 인스턴스 중에 어디로 연결시킬 지 설정하면 된다.
