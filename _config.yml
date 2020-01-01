@@ -71,7 +71,7 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/wp-content/uploads/2018/02/IMG_6018-e1517552810394-768x1024.jpg
 accent_color:          '#4fb1ba'
 
 # The string encoding which fonts to fetch from Google Fonts.
@@ -262,6 +262,18 @@ compress_html:
 
 sass:
   style:               compressed
+
+defaults:
+  - scope:
+      path: blog.md
+    values:
+      menu: true
+      order: 1
+  - scope:
+      path: develop.md
+    values:
+      menu: true
+      order: 2
 
 # If you are upgrading form v5 (or earlier), uncomment the lines below,
 # so that the location of the feed XML stays the same.

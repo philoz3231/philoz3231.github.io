@@ -6,9 +6,8 @@ author: philoz
 layout: post
 guid: http://localhost/wordpress/?p=764
 permalink: /en/2017/07/13/greedy-algorithm-and-dynamic-programming/
-categories:
-  - algorithm
-  - Development
+tags: [develop]
+categories: [develop, algorithm]
 ---
 Greedy algorithm is special case of DP, but it's different from DP(dynamic programming) because of some conditions.
 
