@@ -10,7 +10,9 @@ image: /assets/wp-content/uploads/2018/02/54464235-180x270.jpg
 tags: [blog]
 categories: [blog, book]
 ---
-[caption id="attachment_1061" align="alignright" width="200"]<img class="wp-image-1061 size-medium" src="/assets/wp-content/uploads/2018/02/54464235-200x300.jpg" alt="" width="200" height="300"> ©북폴리오[/caption]
+<img class="wp-image-1061 size-medium" src="/assets/wp-content/uploads/2018/02/54464235-200x300.jpg" alt="" width="200" height="300"> 
+
+©북폴리오
 
 나온 지 꽤 됐고 이미 영화화되기까지 한 인기 추리소설이다.
 

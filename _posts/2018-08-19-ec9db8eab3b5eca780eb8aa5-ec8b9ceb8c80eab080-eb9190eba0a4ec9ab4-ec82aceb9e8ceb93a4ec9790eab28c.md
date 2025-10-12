@@ -11,11 +11,14 @@ tags: [blog]
 categories: [blog, book]
 
 ---
-[caption id="attachment_1102" align="aligncenter" width="287"]<img class=" wp-image-1102" src="/assets/wp-content/uploads/2018/08/31957_3123_521-683x1024.jpg" alt="" width="287" height="431"> ©원더박스[/caption]
+<img class=" wp-image-1102" src="/assets/wp-content/uploads/2018/08/31957_3123_521-683x1024.jpg" alt="" width="287" height="431"> ©원더박스
+
 <blockquote>AI시대의 생존법에 대하여</blockquote>
 2018 구글 I/O에서 구글 또 한 번 세상에 놀라운 AI 기술을 선보였다. '듀플렉스'라고 불리는 AI 기술은 이제 주인을 대신해서 식당이나 미용실을 예약해준다. 알파고가 나온 지 얼마되지 않았지만 이제 성큼 세상은 공상과학영화가 꿈꾸던 미래로 나아간 것이다.
 
-[caption id="attachment_1107" align="aligncenter" width="421"]<img class=" wp-image-1107" src="/assets/wp-content/uploads/2018/08/1595ab88cd0778eaa9e451c22f0af3a1-1-1024x575.png" alt="" width="421" height="236"> 구글이 공개한 AI 비서 듀플렉스가 통화하는 모습[/caption]
+<img class=" wp-image-1107" src="/assets/wp-content/uploads/2018/08/1595ab88cd0778eaa9e451c22f0af3a1-1-1024x575.png" alt="" width="421" height="236"> 
+
+구글이 공개한 AI 비서 듀플렉스가 통화하는 모습
 
 &nbsp;
 
@@ -33,7 +36,8 @@ categories: [blog, book]
 
 이러한 입장에서 최근에 애플이나 구글에서 나온 스마트폰 통제 기술들은 기업들 역시 이러한 추세를 읽고 사람들이 기술에 완전히 등을 지지 않도록 하려는 노력인 것 같이 보인다. 삶은 더 복잡해지고, 사람들은 많은 것을 기계에 의지하고 있다. 앞으로 다가오는 세상에서는 더욱 인간적인 것이 가장 빛을 발할 것이다. 결국 우리 모두는 기계가 아닌 인간이기 때문이다.
 
-[caption id="attachment_1108" align="aligncenter" width="615"]<a href="http://www.itworld.co.kr/news/110358" target="_blank" rel="http://www.itworld.co.kr/news/110358 noopener"><img class="wp-image-1108" src="/assets/wp-content/uploads/2018/08/digital-wellbeing-screen-time-100767122-large_3x2.jpg" alt="" width="615" height="410"></a> 구글, 애플이 선보인 디지털 웰빙기능<br>출처: itworld<br>http://www.itworld.co.kr/news/110358[/caption]
+<a href="http://www.itworld.co.kr/news/110358" target="_blank" rel="http://www.itworld.co.kr/news/110358 noopener"><img class="wp-image-1108" src="/assets/wp-content/uploads/2018/08/digital-wellbeing-screen-time-100767122-large_3x2.jpg" alt="" width="615" height="410"></a> 구글, 애플이 선보인 디지털 웰빙기능<br>출처: http://www.itworld.co.kr/news/110358
+
 <blockquote>좋은 글</blockquote>
 레이 브래드버리의 예측도 살짝 빗나간 것 같다. 더 이상 책을 불태울 필요가 없다. 아무도 책을 읽지 않으니 말이다. ... 사소한 디지털 세부 사항들이 홍수처럼 밀려들어와 본질을 흐릿하게 만들면 그만이다. - 51
 

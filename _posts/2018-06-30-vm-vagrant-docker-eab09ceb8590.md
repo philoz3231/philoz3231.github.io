@@ -12,7 +12,7 @@ categories: [develop]
 ---
 간단하게(거칠게?) 이해한 바를 바탕으로 정리해둠.
 
-[caption id="attachment_1092" align="aligncenter" width="299"]<img class="wp-image-1092" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.21.png" alt="" width="299" height="458"> Virtual Machine Concept[/caption]
+<img class="wp-image-1092" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.21.png" alt="" width="299" height="458"> Virtual Machine Concept
 <blockquote>1. Virtual Machine(Virtual Machine, VM ware 등)</blockquote>
 버츄얼 머신(VM)은 기존 OS(Host OS) 위에서 가상의 OS(Guest OS)를 얹혀놓은 형태. 가상 OS의 모든 기능을 사용할 수 있지만 OS를 두번 거치는 형태이기 때문에 속도가 느림.
 Hypervisor
@@ -41,4 +41,4 @@ VM 관리를 편하게 하기 위해 필요한 오픈소스 관리 툴. VM 내�
 
 &nbsp;
 
-[caption id="attachment_1090" align="aligncenter" width="710"]<img class="wp-image-1090 size-full" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.41.png" alt="" width="710" height="328"> 전체 개념도[/caption]
+<img class="wp-image-1090 size-full" src="/assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.41.png" alt="" width="710" height="328"> 전체 개념도
