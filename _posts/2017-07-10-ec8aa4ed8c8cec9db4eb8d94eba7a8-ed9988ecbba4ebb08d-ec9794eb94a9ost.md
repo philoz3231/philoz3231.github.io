@@ -10,7 +10,9 @@ image: /assets/wp-content/uploads/2017/07/spiderman-1200x675.jpg
 tags: [blog]
 categories: [blog]
 ---
-[caption id="attachment_742" align="aligncenter" width="840"]<img class="size-large wp-image-742" src="/assets/wp-content/uploads/2017/07/spiderman-1024x576.jpg" alt="" width="840" height="473"> 친절한 이웃 스파이더맨이 10대가 되어 돌아왔다[/caption]
+<img class="size-large wp-image-742" src="/assets/wp-content/uploads/2017/07/spiderman-1024x576.jpg" alt="" width="840" height="473">
+
+친절한 이웃 스파이더맨이 10대가 되어 돌아왔다
 
 스파이더맨 홈커밍의 엔딩ost는 미국 펑크 락그룹 Ramones의 Blitzkrieg Bop이라는 곡이었다.
 

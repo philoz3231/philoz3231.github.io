@@ -10,13 +10,17 @@ image: /assets/wp-content/uploads/2017/09/IMG_5078-1200x1600.jpg
 tags: [blog]
 categories: [blog]
 ---
-[caption id="attachment_934" align="aligncenter" width="768"]<img class="size-large wp-image-934" src="/assets/wp-content/uploads/2017/09/IMG_5078-768x1024.jpg" alt="" width="768" height="1024"> 카카오뱅크에 이어 케이뱅크의 체크카드도 신청했다[/caption]
+<img class="size-large wp-image-934" src="/assets/wp-content/uploads/2017/09/IMG_5078-768x1024.jpg" alt="" width="768" height="1024">
+
+카카오뱅크에 이어 케이뱅크의 체크카드도 신청했다
 
 저번 카카오뱅크 카드에 이어서 케이뱅크와 네이버가 함께 만든 '케이뱅크 네이버페이 체크카드'를 신청했습니다.
 
 <!--more-->
 
-[caption id="attachment_935" align="aligncenter" width="840"]<img class="size-large wp-image-935" src="/assets/wp-content/uploads/2017/09/IMG_5079-1024x768.jpg" alt="" width="840" height="630"> 개인적으로는 카카오 쪽의 디자인과 색감이 더 마음에 들었다[/caption]
+<img class="size-large wp-image-935" src="/assets/wp-content/uploads/2017/09/IMG_5079-1024x768.jpg" alt="" width="840" height="630">
+
+개인적으로는 카카오 쪽의 디자인과 색감이 더 마음에 들었다
 
 현재 케이뱅크 네이버페이 체크카드(줄여서 '케네카드') 발급 시 네이버페이 포인트 3000원을 지급하는 이벤트 중입니다.
 케네카드의 주요혜택은 월 24만원 이상 사용 시 사용금액의 1.2%를 네이퍼페이로 적립해주는 것인데요.

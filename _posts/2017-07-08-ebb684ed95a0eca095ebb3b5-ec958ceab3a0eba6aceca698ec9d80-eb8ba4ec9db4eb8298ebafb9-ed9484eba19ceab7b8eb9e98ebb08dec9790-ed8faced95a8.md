@@ -23,7 +23,9 @@ DP의 sub structure는 의존적이다. 즉 하위 문제들이 서로에게 영
 
 그러므로, 두 알고리즘은 모두 분할, 정복, 그리고 combine하는 "step"을 거치지만 어느 한 쪽이 다른 쪽을 포함한다고는 말하기 힘들 것이다.
 
-[caption id="attachment_753" align="aligncenter" width="717"]<img class="size-full wp-image-753" src="/assets/wp-content/uploads/2017/07/-2017-07-12-오전-2.05.54.png" alt="" width="717" height="454"> Dynamic programming VS Divide and Conquer algorithm[/caption]
+<img class="size-full wp-image-753" src="/assets/wp-content/uploads/2017/07/-2017-07-12-오전-2.05.54.png" alt="" width="717" height="454">
+
+Dynamic programming VS Divide and Conquer algorithm
 
 다이어그램으로 DP와 분할 정복 알고리즘을 구분해보았다.
 

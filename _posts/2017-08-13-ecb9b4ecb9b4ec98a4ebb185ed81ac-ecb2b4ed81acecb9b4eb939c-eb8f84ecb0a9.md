@@ -10,7 +10,9 @@ image: /assets/wp-content/uploads/2017/08/IMG_4934-1200x900.jpg
 tags: [blog]
 categories: [blog]
 ---
-[caption id="attachment_927" align="aligncenter" width="840"]<img class="size-large wp-image-927" src="/assets/wp-content/uploads/2017/08/IMG_4934-1024x768.jpg" alt="" width="840" height="630"> 카카오뱅크 체크카드 중 무지![/caption]
+<img class="size-large wp-image-927" src="/assets/wp-content/uploads/2017/08/IMG_4934-1024x768.jpg" alt="" width="840" height="630">
+
+카카오뱅크 체크카드 중 무지!
 
 카카오뱅크 서비스가 오픈하자마자 체크카드를 신청했었는데요.
 
@@ -19,7 +21,9 @@ categories: [blog]
 라이언을 고를까 하다가 너무 많을 것 같아서 원래 카카오 색깔이기도 하고, 좋아하는 '무지'캐릭터 체크카드를 신청했습니다.
 노란색이 굉장히 화사해서 들고다니고 싶어집니다... 잘 고른 것 같아요!
 
-[caption id="attachment_928" align="aligncenter" width="840"]<img class="size-large wp-image-928" src="/assets/wp-content/uploads/2017/08/IMG_4937-1024x768.jpg" alt="" width="840" height="630"> 약관 및 사용방법과 함께 센스있는 카카오프렌즈 스티커가 동봉되어 왔다[/caption]
+<img class="size-large wp-image-928" src="/assets/wp-content/uploads/2017/08/IMG_4937-1024x768.jpg" alt="" width="840" height="630">
+
+약관 및 사용방법과 함께 센스있는 카카오프렌즈 스티커가 동봉되어 왔다
 
 가이드 및 이용약관, 혜택 등이 적혀있는 종이들과 같이 왔는데요. 나머지는 다른 체크카드와 비슷하지만, 카카오 프렌즈가 인쇄된 스티커가 동봉된다는 점이 인상 깊었습니다.
 

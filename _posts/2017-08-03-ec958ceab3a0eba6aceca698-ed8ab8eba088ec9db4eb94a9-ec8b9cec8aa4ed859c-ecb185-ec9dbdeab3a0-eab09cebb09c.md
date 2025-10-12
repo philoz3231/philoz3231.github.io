@@ -10,7 +10,9 @@ image: /assets/wp-content/uploads/2017/08/E2817314825_l.jpg
 tags: [develop]
 categories: [develop, book]
 ---
-[caption id="attachment_896" align="alignright" width="211"]<img class="size-medium wp-image-896" src="/assets/wp-content/uploads/2017/08/E2817314825_l-211x300.jpg" alt="" width="211" height="300"> ©한빛미디어[/caption]
+<img class="size-medium wp-image-896" src="/assets/wp-content/uploads/2017/08/E2817314825_l-211x300.jpg" alt="" width="211" height="300">
+
+©한빛미디어
 
 신경망 첫걸음, 딥러닝 첫걸음과 텐서플로 입문서까지 읽고 나서 직접 시스템을 구현해보고 싶어서 고른 책이다.
 <!--more-->
@@ -30,9 +32,13 @@ categories: [develop, book]
 
 아래는 책에서 소개한 구현 내용과 내가 간단히 수정해서 사용한 부분이다.
 
-[caption id="attachment_900" align="aligncenter" width="631"]<img class="size-full wp-image-900" src="/assets/wp-content/uploads/2017/08/-2017-08-03-오후-9.50.42.png" alt="" width="631" height="438"> 일반적으로 쓰이는 트레이딩 시스템의 구성이라고 한다[/caption]
+<img class="size-full wp-image-900" src="/assets/wp-content/uploads/2017/08/-2017-08-03-오후-9.50.42.png" alt="" width="631" height="438">
 
-[caption id="attachment_901" align="alignright" width="800"]<img class="size-full wp-image-901" src="/assets/wp-content/uploads/2017/08/-2017-08-03-오후-9.51.16-e1501765179875.png" alt="" width="800" height="330"> 책에서 실제 구현된 내용이다. 파이썬과 MySQL을 통해 구현됐다[/caption]
+일반적으로 쓰이는 트레이딩 시스템의 구성이라고 한다
+
+<img class="size-full wp-image-901" src="/assets/wp-content/uploads/2017/08/-2017-08-03-오후-9.51.16-e1501765179875.png" alt="" width="800" height="330">
+
+책에서 실제 구현된 내용이다. 파이썬과 MySQL을 통해 구현됐다
 
 구글 파이낸스 API 사용법
 [gist https://gist.github.com/philoz3231/7c43c25278f625bebca4d476063a10ed /]

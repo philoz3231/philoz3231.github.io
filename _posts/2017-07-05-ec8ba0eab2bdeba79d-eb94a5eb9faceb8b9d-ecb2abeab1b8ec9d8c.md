@@ -16,7 +16,9 @@ categories: [develop, neural network]
 
 구체적인 수식 도출을 제외하고 개념정도만 이해해도 소스 사용에는 문제가 없을 것으로 보여서 정리해둔다.
 <blockquote>1. 인공지능, 머신러닝, 딥러닝, 신경망의 개념</blockquote>
-[caption id="attachment_620" align="alignnone" width="445"]<img class="size-full wp-image-620" src="/assets/wp-content/uploads/2017/07/-2017-07-06-오전-1.48.11.png" alt="diagram1" width="445" height="465"> 인공지능, 머신러닝, 딥러닝의 관계[/caption]
+<img class="size-full wp-image-620" src="/assets/wp-content/uploads/2017/07/-2017-07-06-오전-1.48.11.png" alt="diagram1" width="445" height="465">
+
+인공지능, 머신러닝, 딥러닝의 관계
 
 <!--more-->
 
@@ -24,7 +26,9 @@ categories: [develop, neural network]
 머신러닝: 데이터를 통해 컴퓨터를 학습시켜서 인공지능의 성능을 향상시키는 기법
 딥러닝: 신경망을 기반으로 한 머신러닝의 기법 중 하나
 <blockquote>2. 신경망 작동원리</blockquote>
-[caption id="attachment_627" align="aligncenter" width="769"]<img class="size-full wp-image-627" src="/assets/wp-content/uploads/2017/07/-2017-07-06-오전-2.18.23.png" alt="How neural network works" width="769" height="686"> 다층 신경망 작동원리[/caption]
+<img class="size-full wp-image-627" src="/assets/wp-content/uploads/2017/07/-2017-07-06-오전-2.18.23.png" alt="How neural network works" width="769" height="686">
+
+다층 신경망 작동원리
 
 신경망은 은닉층 여부에 따라 단층, 다층 신경망으로 나뉜다.
 현재 일반적으로 사용되는 다층 신경망은 은닉층의 가중치(그림에서 각 노드를 잇는 선으로 표현)를 적절히 안배하여 원하는 결과를 얻는다.
