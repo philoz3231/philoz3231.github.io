@@ -2,11 +2,11 @@
 id: 690
 title: 분할정복 알고리즘은 다이나믹 프로그래밍에 포함되나?
 date: 2017-07-08T12:44:20+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=690
 permalink: '/2017/07/08/%eb%b6%84%ed%95%a0%ec%a0%95%eb%b3%b5-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98%ec%9d%80-%eb%8b%a4%ec%9d%b4%eb%82%98%eb%af%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d%ec%97%90-%ed%8f%ac%ed%95%a8/'
-image: /wp-content/uploads/2017/07/-2017-07-03-오후-2.43.26-1200x754.png
+image: /assets/wp-content/uploads/2017/07/-2017-07-03-오후-2.43.26-1200x754.png
 tags: [develop]
 categories: [develop, algorithm]
 ---

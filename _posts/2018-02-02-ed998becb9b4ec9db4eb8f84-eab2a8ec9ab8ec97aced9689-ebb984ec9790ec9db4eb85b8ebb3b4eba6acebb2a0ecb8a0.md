@@ -2,11 +2,11 @@
 id: 1028
 title: 홋카이도 겨울여행-비에이,노보리베츠
 date: 2018-02-02T16:26:00+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1028
 permalink: '/2018/02/02/%ed%99%8b%ec%b9%b4%ec%9d%b4%eb%8f%84-%ea%b2%a8%ec%9a%b8%ec%97%ac%ed%96%89-%eb%b9%84%ec%97%90%ec%9d%b4%eb%85%b8%eb%b3%b4%eb%a6%ac%eb%b2%a0%ec%b8%a0/'
-image: /wp-content/uploads/2018/02/IMG_6429-360x270.jpg
+image: /assets/wp-content/uploads/2018/02/IMG_6429-360x270.jpg
 tags: [blog]
 categories: [blog]
 ---

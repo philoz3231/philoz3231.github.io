@@ -2,11 +2,11 @@
 id: 741
 title: 스파이더맨 홈커밍 엔딩OST
 date: 2017-07-10T10:04:50+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=741
 permalink: '/2017/07/10/%ec%8a%a4%ed%8c%8c%ec%9d%b4%eb%8d%94%eb%a7%a8-%ed%99%88%ec%bb%a4%eb%b0%8d-%ec%97%94%eb%94%a9ost/'
-image: /wp-content/uploads/2017/07/spiderman-1200x675.jpg
+image: /assets/wp-content/uploads/2017/07/spiderman-1200x675.jpg
 tags: [blog]
 categories: [blog]
 ---

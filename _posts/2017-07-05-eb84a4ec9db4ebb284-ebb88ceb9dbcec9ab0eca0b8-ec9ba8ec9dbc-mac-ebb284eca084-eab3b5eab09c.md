@@ -2,11 +2,11 @@
 id: 603
 title: 네이버 브라우져 웨일, Mac 버전 공개
 date: 2017-07-05T23:17:18+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=603
 permalink: '/2017/07/05/%eb%84%a4%ec%9d%b4%eb%b2%84-%eb%b8%8c%eb%9d%bc%ec%9a%b0%ec%a0%b8-%ec%9b%a8%ec%9d%bc-mac-%eb%b2%84%ec%a0%84-%ea%b3%b5%ea%b0%9c/'
-image: /wp-content/uploads/2017/07/-2017-07-05-오후-11.10.25.png
+image: /assets/wp-content/uploads/2017/07/-2017-07-05-오후-11.10.25.png
 tags: [blog]
 categories: [blog, news]
 ---

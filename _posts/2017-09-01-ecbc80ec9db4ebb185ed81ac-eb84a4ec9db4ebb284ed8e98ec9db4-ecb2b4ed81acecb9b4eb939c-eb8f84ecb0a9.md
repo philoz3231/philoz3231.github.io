@@ -2,11 +2,11 @@
 id: 933
 title: 케이뱅크 네이버페이 체크카드 도착!
 date: 2017-09-01T13:42:07+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=933
 permalink: '/2017/09/01/%ec%bc%80%ec%9d%b4%eb%b1%85%ed%81%ac-%eb%84%a4%ec%9d%b4%eb%b2%84%ed%8e%98%ec%9d%b4-%ec%b2%b4%ed%81%ac%ec%b9%b4%eb%93%9c-%eb%8f%84%ec%b0%a9/'
-image: /wp-content/uploads/2017/09/IMG_5078-1200x1600.jpg
+image: /assets/wp-content/uploads/2017/09/IMG_5078-1200x1600.jpg
 tags: [blog]
 categories: [blog]
 ---

@@ -2,11 +2,11 @@
 id: 1081
 title: 카페를 고르는 기준
 date: 2018-05-14T21:23:12+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1081
 permalink: '/2018/05/14/%ec%b9%b4%ed%8e%98%eb%a5%bc-%ea%b3%a0%eb%a5%b4%eb%8a%94-%ea%b8%b0%ec%a4%80/'
-image: /wp-content/uploads/2018/05/20150922072940760925-604x147.png
+image: /assets/wp-content/uploads/2018/05/20150922072940760925-604x147.png
 tags: [blog]
 categories: [blog]
 ---

@@ -2,11 +2,11 @@
 id: 1088
 title: VM, Vagrant, Docker 개념
 date: 2018-06-30T14:40:26+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1088
 permalink: '/2018/06/30/vm-vagrant-docker-%ea%b0%9c%eb%85%90/'
-image: /wp-content/uploads/2018/06/-2018-06-30-오후-2.27.41-584x270.png
+image: /assets/wp-content/uploads/2018/06/-2018-06-30-오후-2.27.41-584x270.png
 tags: [develop]
 categories: [develop]
 ---

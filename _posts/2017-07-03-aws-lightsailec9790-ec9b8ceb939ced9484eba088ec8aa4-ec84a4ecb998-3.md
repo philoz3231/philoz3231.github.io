@@ -2,11 +2,11 @@
 id: 129
 title: 'AWS lightsail에 워드프레스 설치 &#8211; 3'
 date: 2017-07-03T03:38:47+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=129
 permalink: '/2017/07/03/aws-lightsail%ec%97%90-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%84%a4%ec%b9%98-3/'
-image: /wp-content/uploads/2017/07/2017-07-03-오전-1.33.07-1200x551.png
+image: /assets/wp-content/uploads/2017/07/2017-07-03-오전-1.33.07-1200x551.png
 tags: [develop]
 categories: [develop, wordpress]
 ---

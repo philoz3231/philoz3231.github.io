@@ -2,11 +2,11 @@
 id: 895
 title: 알고리즘 트레이딩 시스템
 date: 2017-08-03T22:01:41+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=895
 permalink: '/2017/08/03/%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-%ed%8a%b8%eb%a0%88%ec%9d%b4%eb%94%a9-%ec%8b%9c%ec%8a%a4%ed%85%9c-%ec%b1%85-%ec%9d%bd%ea%b3%a0-%ea%b0%9c%eb%b0%9c/'
-image: /wp-content/uploads/2017/08/E2817314825_l.jpg
+image: /assets/wp-content/uploads/2017/08/E2817314825_l.jpg
 tags: [develop]
 categories: [develop, book]
 ---

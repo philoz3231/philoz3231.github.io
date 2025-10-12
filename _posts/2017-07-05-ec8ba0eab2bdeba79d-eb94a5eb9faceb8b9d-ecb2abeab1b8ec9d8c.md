@@ -2,11 +2,11 @@
 id: 600
 title: 신경망, 딥러닝 첫걸음
 date: 2017-07-05T09:37:30+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=600
 permalink: '/2017/07/05/%ec%8b%a0%ea%b2%bd%eb%a7%9d-%eb%94%a5%eb%9f%ac%eb%8b%9d-%ec%b2%ab%ea%b1%b8%ec%9d%8c/'
-image: /wp-content/uploads/2017/07/-2017-07-06-오전-1.48.11.png
+image: /assets/wp-content/uploads/2017/07/-2017-07-06-오전-1.48.11.png
 tags: [develop]
 categories: [develop, neural network]
 ---

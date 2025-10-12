@@ -2,7 +2,7 @@
 id: 748
 title: 'Spiderman Homecoming- Ending OST'
 date: 2017-07-12T01:29:42+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=748
 permalink: /en/2017/07/12/spiderman-homecoming-ending-ost/

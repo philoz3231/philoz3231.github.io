@@ -2,11 +2,11 @@
 id: 926
 title: 카카오뱅크 체크카드 도착!
 date: 2017-08-13T17:49:42+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=926
 permalink: '/2017/08/13/%ec%b9%b4%ec%b9%b4%ec%98%a4%eb%b1%85%ed%81%ac-%ec%b2%b4%ed%81%ac%ec%b9%b4%eb%93%9c-%eb%8f%84%ec%b0%a9/'
-image: /wp-content/uploads/2017/08/IMG_4934-1200x900.jpg
+image: /assets/wp-content/uploads/2017/08/IMG_4934-1200x900.jpg
 tags: [blog]
 categories: [blog]
 ---

@@ -2,11 +2,11 @@
 id: 694
 title: '워드프레스 다국어 설정 &#8211; Polylang 플러그인 사용법'
 date: 2017-07-09T02:08:56+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=694
 permalink: '/2017/07/09/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%eb%8b%a4%ea%b5%ad%ec%96%b4-%ec%84%a4%ec%a0%95-polylang-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%ec%82%ac%ec%9a%a9%eb%b2%95/'
-image: /wp-content/uploads/2017/07/-2017-07-08-오후-1.04.57.png
+image: /assets/wp-content/uploads/2017/07/-2017-07-08-오후-1.04.57.png
 tags: [develop]
 categories: [develop, wordpress]
 ---

@@ -2,7 +2,7 @@
 id: 833
 title: 정렬 알고리즘 코드
 date: 2017-07-21T01:48:40+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=833
 permalink: '/2017/07/21/java-%ec%a0%95%eb%a0%ac-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-%ec%bd%94%eb%93%9c/'

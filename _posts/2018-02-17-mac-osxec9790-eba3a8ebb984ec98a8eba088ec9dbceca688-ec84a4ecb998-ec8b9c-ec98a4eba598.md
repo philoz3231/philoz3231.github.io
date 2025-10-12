@@ -2,11 +2,11 @@
 id: 1070
 title: Mac OSX에 루비온레일즈 설치 시 오류
 date: 2018-02-17T17:18:23+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1070
 permalink: '/2018/02/17/mac-osx%ec%97%90-%eb%a3%a8%eb%b9%84%ec%98%a8%eb%a0%88%ec%9d%bc%ec%a6%88-%ec%84%a4%ec%b9%98-%ec%8b%9c-%ec%98%a4%eb%a5%98/'
-image: /wp-content/uploads/2018/02/4223-270x270.png
+image: /assets/wp-content/uploads/2018/02/4223-270x270.png
 tags: [develop]
 categories: [develop, rails]
 ---

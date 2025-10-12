@@ -2,11 +2,11 @@
 id: 751
 title: 그리디 알고리즘과 다이나믹 프로그래밍 비교
 date: 2017-07-12T02:14:27+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=751
 permalink: '/2017/07/12/%ea%b7%b8%eb%a6%ac%eb%94%94-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98%ea%b3%bc-%eb%8b%a4%ec%9d%b4%eb%82%98%eb%af%b9-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%eb%b9%84%ea%b5%90/'
-image: /wp-content/uploads/2017/07/-2017-07-12-오전-2.26.48.png
+image: /assets/wp-content/uploads/2017/07/-2017-07-12-오전-2.26.48.png
 tags: [develop]
 categories: [develop, algorithm]
 ---

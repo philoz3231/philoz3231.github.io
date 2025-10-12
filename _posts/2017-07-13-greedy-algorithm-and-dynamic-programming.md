@@ -2,7 +2,7 @@
 id: 764
 title: Greedy algorithm and Dynamic programming
 date: 2017-07-13T02:06:54+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=764
 permalink: /en/2017/07/13/greedy-algorithm-and-dynamic-programming/

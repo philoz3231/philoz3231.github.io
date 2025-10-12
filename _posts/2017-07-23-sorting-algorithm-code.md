@@ -2,7 +2,7 @@
 id: 851
 title: Sorting Algorithm Code
 date: 2017-07-23T00:53:30+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=851
 permalink: /en/2017/07/23/sorting-algorithm-code/

@@ -2,7 +2,7 @@
 id: 588
 title: Is Dynamic Programming included in Divide and Conquer Algorithm?
 date: 2017-07-03T14:48:10+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=588
 permalink: /en/2017/07/03/is-dynamic-programming-included-in-divide-and-conquer-algorithm/

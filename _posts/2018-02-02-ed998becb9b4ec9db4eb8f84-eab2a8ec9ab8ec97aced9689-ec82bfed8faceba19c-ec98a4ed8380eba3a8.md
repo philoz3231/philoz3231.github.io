@@ -2,11 +2,11 @@
 id: 981
 title: 홋카이도 겨울여행-삿포로, 오타루
 date: 2018-02-02T15:53:49+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=981
 permalink: '/2018/02/02/%ed%99%8b%ec%b9%b4%ec%9d%b4%eb%8f%84-%ea%b2%a8%ec%9a%b8%ec%97%ac%ed%96%89-%ec%82%bf%ed%8f%ac%eb%a1%9c-%ec%98%a4%ed%83%80%eb%a3%a8/'
-image: /wp-content/uploads/2018/02/IMG_6018-e1517552810394-203x270.jpg
+image: /assets/wp-content/uploads/2018/02/IMG_6018-e1517552810394-203x270.jpg
 tags: [blog]
 categories: [blog]
 ---

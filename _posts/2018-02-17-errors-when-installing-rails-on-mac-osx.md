@@ -2,11 +2,11 @@
 id: 1073
 title: Errors when installing rails on mac OSX
 date: 2018-02-17T17:34:50+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1073
 permalink: /en/2018/02/17/errors-when-installing-rails-on-mac-osx/
-image: /wp-content/uploads/2018/02/4223-1-270x270.png
+image: /assets/wp-content/uploads/2018/02/4223-1-270x270.png
 tags: [develop]
 categories: [develop, rails]
 ---

@@ -2,15 +2,17 @@
 id: 1114
 title: 소프트웨어, 누가 이렇게 개떡 같이 만든 거야
 date: 2018-09-23T16:57:05+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1114
 permalink: '/2018/09/23/%ec%86%8c%ed%94%84%ed%8a%b8%ec%9b%a8%ec%96%b4-%eb%88%84%ea%b0%80-%ec%9d%b4%eb%a0%87%ea%b2%8c-%ea%b0%9c%eb%96%a1-%ea%b0%99%ec%9d%b4-%eb%a7%8c%eb%93%a0-%ea%b1%b0%ec%95%bc/'
-image: /wp-content/uploads/2018/09/다운로드-182x270.jpeg
+image: /assets/wp-content/uploads/2018/09/-182x270.jpeg
 tags: [develop]
 categories: [develop, book]
 ---
-[caption id="attachment_1115" align="aligncenter" width="184"]<img class="wp-image-1115 size-full" src="/assets/wp-content/uploads/2018/09/-182x270.jpeg" alt="" width="184" height="273"> ©인사이트[/caption]
+<img class="wp-image-1115 size-full" src="/assets/wp-content/uploads/2018/09/-182x270.jpeg" alt="" width="184" height="273"> 
+
+©인사이트
 <blockquote>답답해서 썼구나</blockquote>
 서두를 읽자마자 이런 생각이 들었다. '저자가 정말 답답해서 쓴 책이구나'.&nbsp;
 

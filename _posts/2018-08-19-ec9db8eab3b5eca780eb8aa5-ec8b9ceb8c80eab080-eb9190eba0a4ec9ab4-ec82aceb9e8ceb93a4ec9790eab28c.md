@@ -2,11 +2,11 @@
 id: 1101
 title: 인공지능 시대가 두려운 사람들에게
 date: 2018-08-19T20:08:45+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1101
 permalink: '/2018/08/19/%ec%9d%b8%ea%b3%b5%ec%a7%80%eb%8a%a5-%ec%8b%9c%eb%8c%80%ea%b0%80-%eb%91%90%eb%a0%a4%ec%9a%b4-%ec%82%ac%eb%9e%8c%eb%93%a4%ec%97%90%ea%b2%8c/'
-image: /wp-content/uploads/2018/08/31957_3123_521-180x270.jpg
+image: /assets/wp-content/uploads/2018/08/31957_3123_521-180x270.jpg
 tags: [blog]
 categories: [blog, book]
 

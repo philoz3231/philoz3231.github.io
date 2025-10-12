@@ -2,7 +2,7 @@
 id: 1124
 title: 2만원으로 IoT 보일러 제어기 만들기
 date: 2018-12-28T16:59:09+09:00
-author: philoz
+author: luis
 layout: post
 guid: http://localhost/wordpress/?p=1124
 permalink: '/2018/12/28/2%eb%a7%8c%ec%9b%90%ec%9c%bc%eb%a1%9c-iot-%eb%b3%b4%ec%9d%bc%eb%9f%ac-%ec%a0%9c%ec%96%b4%ea%b8%b0-%eb%a7%8c%eb%93%a4%ea%b8%b0/'
@@ -12,7 +12,7 @@ enclosure:
     7472582
     video/mp4
     
-image: /wp-content/uploads/2018/12/microbots-push-screen7-item-on-light-switch-with-device-1024x768-1-360x270.png
+image: /assets/wp-content/uploads/2018/12/microbots-push-screen7-item-on-light-switch-with-device-1024x768-1-360x270.png
 tags: [develop]
 categories: [develop, arduino]
 ---
