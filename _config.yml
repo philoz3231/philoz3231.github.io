@@ -192,10 +192,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: "static"
-    values:
-      layout: null
 
 sass:
   style: compressed
