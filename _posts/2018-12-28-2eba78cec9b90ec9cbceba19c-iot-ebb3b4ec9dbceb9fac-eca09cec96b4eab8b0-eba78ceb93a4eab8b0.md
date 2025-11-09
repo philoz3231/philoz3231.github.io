@@ -85,7 +85,8 @@ categories: [develop, arduino]
 <!-- /wp:image -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code>//서보모터 작동예시
+```c
+//서보모터 작동예시
 #include &lt;Servo.h> 
  
 int servoPin = 2;
@@ -114,11 +115,11 @@ void loop()
     servo.write(angle);
     delay(15); 
   } 
-} </code></pre>
-<!-- /wp:code -->
+}
+```
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code>//WiFi 연결 후 웹사이트 버튼 클릭으로 서보모터 제어예시
+```c
+//WiFi 연결 후 웹사이트 버튼 클릭으로 서보모터 제어예시
 #include &lt;ESP8266WiFi.h>
 #include &lt;Servo.h>
 
@@ -222,8 +223,8 @@ void loop() {
 
 
   
-}</code></pre>
-<!-- /wp:code -->
+}
+```
 
 <!-- wp:paragraph -->
 <p>IoT보일러 프로젝트(?)를 진행하면서 알게 된 몇가지 사실이 있다</p>
