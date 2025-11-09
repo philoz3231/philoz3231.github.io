@@ -192,6 +192,10 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: "static"
+    values:
+      layout: null
 
 sass:
   style: compressed
@@ -204,10 +208,6 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
-
-# _config.yml
-include:
-  - ads.txt
   
 exclude:
   - "*.gem"
