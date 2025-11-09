@@ -205,6 +205,10 @@ compress_html:
   ignore:
     envs: [development]
 
+# _config.yml
+include:
+  - ads.txt
+  
 exclude:
   - "*.gem"
   - "*.gemspec"
