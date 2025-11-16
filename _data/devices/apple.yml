@@ -1,4 +1,662 @@
 # Apple 디바이스 데이터
+# A14 Bionic (2020-10) 이후 출시된 기기
+
+# iPhone 시리즈
+
+- id: iphone-12
+  name: iPhone 12
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2532 x 1170"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 2815
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 4
+  memory_unit: GB
+  storage:
+    - 64
+    - 128
+    - 256
+  storage_unit: GB
+  cpu: apple-a14-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "12MP + 12MP"
+    front: "12MP"
+  os: "iOS 14"
+  release_date: "2020-10"
+  weight: 162
+  weight_unit: g
+  dimensions: "146.7 x 71.5 x 7.4 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 4000
+    "3dmark_wild_life_extreme": 2500
+  price: 1090000
+  price_unit: KRW
+
+- id: iphone-12-pro
+  name: iPhone 12 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2532 x 1170"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 2815
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a14-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "12MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 14"
+  release_date: "2020-10"
+  weight: 189
+  weight_unit: g
+  dimensions: "146.7 x 71.5 x 7.4 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 4000
+    "3dmark_wild_life_extreme": 2500
+  price: 1350000
+  price_unit: KRW
+
+- id: iphone-12-pro-max
+  name: iPhone 12 Pro Max
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2778 x 1284"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3687
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a14-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "12MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 14"
+  release_date: "2020-10"
+  weight: 228
+  weight_unit: g
+  dimensions: "160.8 x 78.1 x 7.4 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 4000
+    "3dmark_wild_life_extreme": 2500
+  price: 1490000
+  price_unit: KRW
+
+- id: iphone-13
+  name: iPhone 13
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2532 x 1170"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3240
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 4
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a15-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "12MP + 12MP"
+    front: "12MP"
+  os: "iOS 15"
+  release_date: "2021-09"
+  weight: 174
+  weight_unit: g
+  dimensions: "146.7 x 71.5 x 7.65 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    "3dmark_wild_life_extreme": 3200
+  price: 1090000
+  price_unit: KRW
+
+- id: iphone-13-pro
+  name: iPhone 13 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2532 x 1170"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3095
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a15-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "12MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 15"
+  release_date: "2021-09"
+  weight: 203
+  weight_unit: g
+  dimensions: "146.7 x 71.5 x 7.65 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    "3dmark_wild_life_extreme": 3200
+  price: 1350000
+  price_unit: KRW
+
+- id: iphone-13-pro-max
+  name: iPhone 13 Pro Max
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2778 x 1284"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4352
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a15-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "12MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 15"
+  release_date: "2021-09"
+  weight: 240
+  weight_unit: g
+  dimensions: "160.8 x 78.1 x 7.65 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    "3dmark_wild_life_extreme": 3200
+  price: 1490000
+  price_unit: KRW
+
+- id: iphone-14
+  name: iPhone 14
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2532 x 1170"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3279
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a15-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "12MP + 12MP"
+    front: "12MP"
+  os: "iOS 16"
+  release_date: "2022-09"
+  weight: 172
+  weight_unit: g
+  dimensions: "146.7 x 71.5 x 7.80 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    "3dmark_wild_life_extreme": 3200
+  price: 1090000
+  price_unit: KRW
+
+- id: iphone-14-plus
+  name: iPhone 14 Plus
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2778 x 1284"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4325
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a15-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "12MP + 12MP"
+    front: "12MP"
+  os: "iOS 16"
+  release_date: "2022-09"
+  weight: 203
+  weight_unit: g
+  dimensions: "160.8 x 78.1 x 7.80 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    "3dmark_wild_life_extreme": 3200
+  price: 1250000
+  price_unit: KRW
+
+- id: iphone-14-pro
+  name: iPhone 14 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2556 x 1179"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3200
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a16-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 16"
+  release_date: "2022-09"
+  weight: 206
+  weight_unit: g
+  dimensions: "147.5 x 71.5 x 7.85 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 5500
+    "3dmark_wild_life_extreme": 3800
+  price: 1590000
+  price_unit: KRW
+
+- id: iphone-14-pro-max
+  name: iPhone 14 Pro Max
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4323
+    unit: mAh
+    charging: "Lightning, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a16-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 16"
+  release_date: "2022-09"
+  weight: 240
+  weight_unit: g
+  dimensions: "160.7 x 77.6 x 7.85 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 5500
+    "3dmark_wild_life_extreme": 3800
+  price: 1590000
+  price_unit: KRW
+
+- id: iphone-15
+  name: iPhone 15
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2556 x 1179"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3349
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a16-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "48MP + 12MP"
+    front: "12MP"
+  os: "iOS 17"
+  release_date: "2023-09"
+  weight: 171
+  weight_unit: g
+  dimensions: "147.6 x 71.6 x 7.80 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 5500
+    "3dmark_wild_life_extreme": 3800
+  price: 1250000
+  price_unit: KRW
+
+- id: iphone-15-plus
+  name: iPhone 15 Plus
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4383
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a16-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "48MP + 12MP"
+    front: "12MP"
+  os: "iOS 17"
+  release_date: "2023-09"
+  weight: 201
+  weight_unit: g
+  dimensions: "160.9 x 77.8 x 7.80 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 5500
+    "3dmark_wild_life_extreme": 3800
+  price: 1350000
+  price_unit: KRW
+
+- id: iphone-15-pro
+  name: iPhone 15 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2556 x 1179"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3274
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a17-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 17"
+  release_date: "2023-09"
+  weight: 187
+  weight_unit: g
+  dimensions: "146.6 x 70.6 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 7200
+    "3dmark_wild_life_extreme": 4200
+  price: 1550000
+  price_unit: KRW
 
 - id: iphone-15-pro-max
   name: iPhone 15 Pro Max
@@ -50,8 +708,8 @@
   price: 1590000
   price_unit: KRW
 
-- id: iphone-15-pro
-  name: iPhone 15 Pro
+- id: iphone-16
+  name: iPhone 16
   type: 디바이스
   manufacturer: Apple
   category: smartphone
@@ -60,30 +718,29 @@
     unit: inch
     resolution: "2556 x 1179"
     type: "Super Retina XDR OLED"
-    refresh_rate: 120
+    refresh_rate: 60
     refresh_rate_unit: Hz
   battery:
-    capacity: 3274
+    capacity: 3561
     unit: mAh
     charging: "USB-C, MagSafe, Qi"
-  memory: 8
+  memory: 6
   memory_unit: GB
   storage:
     - 128
     - 256
     - 512
-    - 1024
   storage_unit: GB
-  cpu: apple-a17-pro
+  cpu: apple-a18-pro
   gpu: "6-core GPU"
   camera:
-    rear: "48MP + 12MP + 12MP"
+    rear: "48MP + 12MP"
     front: "12MP"
-  os: "iOS 17"
-  release_date: "2023-09"
-  weight: 187
+  os: "iOS 18"
+  release_date: "2024-09"
+  weight: 173
   weight_unit: g
-  dimensions: "146.6 x 70.6 x 8.25 mm"
+  dimensions: "147.6 x 71.6 x 7.80 mm"
   connectivity:
     bluetooth: "5.3"
     wifi: "Wi-Fi 6E (802.11ax)"
@@ -95,10 +752,467 @@
     wireless_unit: W
   benchmarks:
     geekbench:
-      single: 2900
+      single: 2400
       multi: 7200
-    "3dmark_wild_life_extreme": 4200
-  price: 1350000
+    "3dmark_wild_life_extreme": 4500
+  price: 1290000
+  price_unit: KRW
+
+- id: iphone-16-plus
+  name: iPhone 16 Plus
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4006
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 6
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP"
+    front: "12MP"
+  os: "iOS 18"
+  release_date: "2024-09"
+  weight: 203
+  weight_unit: g
+  dimensions: "160.9 x 77.8 x 7.80 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1390000
+  price_unit: KRW
+
+- id: iphone-16-pro
+  name: iPhone 16 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.3
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3355
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 18"
+  release_date: "2024-09"
+  weight: 187
+  weight_unit: g
+  dimensions: "149.6 x 71.5 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1790000
+  price_unit: KRW
+
+- id: iphone-16-pro-max
+  name: iPhone 16 Pro Max
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.9
+    unit: inch
+    resolution: "2992 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4676
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 18"
+  release_date: "2024-09"
+  weight: 225
+  weight_unit: g
+  dimensions: "163.0 x 77.6 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1690000
+  price_unit: KRW
+
+- id: iphone-17
+  name: iPhone 17
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.3
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3561
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP"
+    front: "24MP"
+  os: "iOS 19"
+  release_date: "2025-09"
+  weight: 173
+  weight_unit: g
+  dimensions: "149.6 x 71.6 x 7.80 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1290000
+  price_unit: KRW
+
+- id: iphone-17-air
+  name: iPhone 17 Air
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.6
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4006
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 12
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP"
+    front: "24MP"
+  os: "iOS 19"
+  release_date: "2025-09"
+  weight: 180
+  weight_unit: g
+  dimensions: "160.9 x 77.8 x 6.1 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1190000
+  price_unit: KRW
+
+- id: iphone-17-pro
+  name: iPhone 17 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.3
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3355
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 12
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "24MP"
+  os: "iOS 19"
+  release_date: "2025-09"
+  weight: 187
+  weight_unit: g
+  dimensions: "149.6 x 71.5 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1790000
+  price_unit: KRW
+
+- id: iphone-17-pro-max
+  name: iPhone 17 Pro Max
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.9
+    unit: inch
+    resolution: "2992 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4676
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 12
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a18-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "24MP"
+  os: "iOS 19"
+  release_date: "2025-09"
+  weight: 225
+  weight_unit: g
+  dimensions: "163.0 x 77.6 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    "3dmark_wild_life_extreme": 4500
+  price: 1990000
+  price_unit: KRW
+
+# iPad 시리즈
+
+# iPad Pro 시리즈
+
+- id: ipad-pro-12.9-m1
+  name: iPad Pro 12.9-inch (M1)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 12.9
+    unit: inch
+    resolution: "2732 x 2048"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 10758
+    unit: mAh
+    charging: "USB-C"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+    - 2048
+  storage_unit: GB
+  cpu: apple-m1
+  gpu: "8-core GPU"
+  camera:
+    rear: "12MP + 10MP"
+    front: "12MP"
+  os: "iPadOS 14"
+  release_date: "2021-04"
+  weight: 682
+  weight_unit: g
+  dimensions: "280.6 x 214.9 x 6.4 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 7500
+    "3dmark_wild_life_extreme": null
+  price: 1290000
+  price_unit: KRW
+
+- id: ipad-pro-11-m4
+  name: iPad Pro 11-inch (M4)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 11
+    unit: inch
+    resolution: "2420 x 1668"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 7538
+    unit: mAh
+    charging: "USB-C"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+    - 2048
+  storage_unit: GB
+  cpu: apple-m4
+  gpu: "10-core GPU"
+  camera:
+    rear: "12MP + 10MP"
+    front: "12MP"
+  os: "iPadOS 17"
+  release_date: "2024-05"
+  weight: 444
+  weight_unit: g
+  dimensions: "247.6 x 178.5 x 5.1 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 35
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    "3dmark_wild_life_extreme": null
+  price: 1290000
   price_unit: KRW
 
 - id: ipad-pro-13-m4
@@ -152,23 +1266,278 @@
   price: 1690000
   price_unit: KRW
 
-- id: ipad-pro-11-m4
-  name: iPad Pro 11-inch (M4)
+# iPad Air 시리즈
+
+- id: ipad-air-4
+  name: iPad Air (4세대)
   type: 디바이스
   manufacturer: Apple
   category: tablet
   display:
-    size: 11
+    size: 10.9
     unit: inch
-    resolution: "2420 x 1668"
-    type: "Liquid Retina XDR"
-    refresh_rate: 120
+    resolution: "2360 x 1640"
+    type: "Liquid Retina"
+    refresh_rate: 60
     refresh_rate_unit: Hz
   battery:
-    capacity: 7538
+    capacity: 7606
+    unit: mAh
+    charging: "USB-C"
+  memory: 4
+  memory_unit: GB
+  storage:
+    - 64
+    - 256
+  storage_unit: GB
+  cpu: apple-a14-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "12MP"
+    front: "7MP"
+  os: "iPadOS 14"
+  release_date: "2020-10"
+  weight: 458
+  weight_unit: g
+  dimensions: "247.6 x 178.5 x 6.1 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 4000
+    "3dmark_wild_life_extreme": null
+  price: 779000
+  price_unit: KRW
+
+- id: ipad-air-5
+  name: iPad Air (5세대)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 10.9
+    unit: inch
+    resolution: "2360 x 1640"
+    type: "Liquid Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 7606
     unit: mAh
     charging: "USB-C"
   memory: 8
+  memory_unit: GB
+  storage:
+    - 64
+    - 256
+  storage_unit: GB
+  cpu: apple-m1
+  gpu: "8-core GPU"
+  camera:
+    rear: "12MP"
+    front: "12MP"
+  os: "iPadOS 15"
+  release_date: "2022-03"
+  weight: 461
+  weight_unit: g
+  dimensions: "247.6 x 178.5 x 6.1 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 7500
+    "3dmark_wild_life_extreme": null
+  price: 899000
+  price_unit: KRW
+
+# iPad 일반 시리즈
+
+- id: ipad-9
+  name: iPad (9세대)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 10.2
+    unit: inch
+    resolution: "2160 x 1620"
+    type: "Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 8557
+    unit: mAh
+    charging: "Lightning"
+  memory: 3
+  memory_unit: GB
+  storage:
+    - 64
+    - 256
+  storage_unit: GB
+  cpu: apple-a13-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "8MP"
+    front: "12MP"
+  os: "iPadOS 15"
+  release_date: "2021-09"
+  weight: 487
+  weight_unit: g
+  dimensions: "250.6 x 174.1 x 7.5 mm"
+  connectivity:
+    bluetooth: "4.2"
+    wifi: "Wi-Fi 5 (802.11ac)"
+    cellular: "4G LTE"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1300
+      multi: 3000
+    "3dmark_wild_life_extreme": null
+  price: 499000
+  price_unit: KRW
+
+- id: ipad-10
+  name: iPad (10세대)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 10.9
+    unit: inch
+    resolution: "2360 x 1640"
+    type: "Liquid Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 7606
+    unit: mAh
+    charging: "USB-C"
+  memory: 4
+  memory_unit: GB
+  storage:
+    - 64
+    - 256
+  storage_unit: GB
+  cpu: apple-a14-bionic
+  gpu: "4-core GPU"
+  camera:
+    rear: "12MP"
+    front: "12MP"
+  os: "iPadOS 16"
+  release_date: "2022-10"
+  weight: 477
+  weight_unit: g
+  dimensions: "248.6 x 179.5 x 7.0 mm"
+  connectivity:
+    bluetooth: "5.2"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 4000
+    "3dmark_wild_life_extreme": null
+  price: 599000
+  price_unit: KRW
+
+- id: ipad-11
+  name: iPad (11세대)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 10.9
+    unit: inch
+    resolution: "2360 x 1640"
+    type: "Liquid Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 7606
+    unit: mAh
+    charging: "USB-C"
+  memory: 4
+  memory_unit: GB
+  storage:
+    - 64
+    - 256
+  storage_unit: GB
+  cpu: apple-a15-bionic
+  gpu: "5-core GPU"
+  camera:
+    rear: "12MP"
+    front: "12MP"
+  os: "iPadOS 17"
+  release_date: "2024-10"
+  weight: 477
+  weight_unit: g
+  dimensions: "248.6 x 179.5 x 7.0 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 20
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    "3dmark_wild_life_extreme": null
+  price: 649000
+  price_unit: KRW
+
+# MacBook 시리즈
+
+# MacBook Air 시리즈
+
+- id: macbook-air-m1
+  name: MacBook Air (M1)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 13.3
+    unit: inch
+    resolution: "2560 x 1600"
+    type: "Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 49.9
+    unit: Wh
+    charging: "USB-C"
+  memory:
+    - 8
+    - 16
   memory_unit: GB
   storage:
     - 256
@@ -176,20 +1545,74 @@
     - 1024
     - 2048
   storage_unit: GB
-  cpu: apple-m4
-  gpu: "10-core GPU"
+  cpu: apple-m1
+  gpu: "7-core or 8-core GPU"
   camera:
-    rear: "12MP + 10MP"
-    front: "12MP"
-  os: "iPadOS 17"
-  release_date: "2024-05"
-  weight: 444
+    rear: null
+    front: "720p FaceTime HD"
+  os: "macOS Big Sur"
+  release_date: "2020-11"
+  weight: 1290
   weight_unit: g
-  dimensions: "247.6 x 178.5 x 5.1 mm"
+  dimensions: "304.1 x 212.4 x 16.1 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 30
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 7500
+    "3dmark_wild_life_extreme": null
+  price: 1390000
+  price_unit: KRW
+
+- id: macbook-air-m2
+  name: MacBook Air (M2)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 13.6
+    unit: inch
+    resolution: "2560 x 1664"
+    type: "Liquid Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 52.6
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 8
+    - 16
+    - 24
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+    - 2048
+  storage_unit: GB
+  cpu: apple-m2
+  gpu: "8-core or 10-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Ventura"
+  release_date: "2022-07"
+  weight: 1240
+  weight_unit: g
+  dimensions: "304.1 x 215.0 x 11.3 mm"
   connectivity:
     bluetooth: "5.3"
-    wifi: "Wi-Fi 6E (802.11ax)"
-    cellular: "5G (sub-6GHz)"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: null
   charging:
     wired_max: 35
     wired_unit: W
@@ -197,10 +1620,393 @@
     wireless_unit: null
   benchmarks:
     geekbench:
-      single: 2800
-      multi: 14200
+      single: 1900
+      multi: 9000
     "3dmark_wild_life_extreme": null
-  price: 1290000
+  price: 1690000
+  price_unit: KRW
+
+# MacBook Pro 시리즈
+
+- id: macbook-pro-13-m1
+  name: MacBook Pro 13-inch (M1)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 13.3
+    unit: inch
+    resolution: "2560 x 1600"
+    type: "Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 58.2
+    unit: Wh
+    charging: "USB-C"
+  memory:
+    - 8
+    - 16
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+    - 2048
+  storage_unit: GB
+  cpu: apple-m1
+  gpu: "8-core GPU"
+  camera:
+    rear: null
+    front: "720p FaceTime HD"
+  os: "macOS Big Sur"
+  release_date: "2020-11"
+  weight: 1410
+  weight_unit: g
+  dimensions: "304.1 x 212.4 x 15.6 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 61
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 7500
+    "3dmark_wild_life_extreme": null
+  price: 1690000
+  price_unit: KRW
+
+- id: macbook-pro-14-m1-pro
+  name: MacBook Pro 14-inch (M1 Pro)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 14.2
+    unit: inch
+    resolution: "3024 x 1964"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 70
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 16
+    - 32
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m1-pro
+  gpu: "14-core or 16-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Monterey"
+  release_date: "2021-10"
+  weight: 1600
+  weight_unit: g
+  dimensions: "312.6 x 221.2 x 15.5 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 96
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 12000
+    "3dmark_wild_life_extreme": null
+  price: 2690000
+  price_unit: KRW
+
+- id: macbook-pro-16-m1-max
+  name: MacBook Pro 16-inch (M1 Max)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 16.2
+    unit: inch
+    resolution: "3456 x 2234"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 100
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 32
+    - 64
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m1-max
+  gpu: "24-core or 32-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Monterey"
+  release_date: "2021-10"
+  weight: 2210
+  weight_unit: g
+  dimensions: "355.7 x 248.1 x 16.8 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 6 (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 140
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2500
+      multi: 12500
+    "3dmark_wild_life_extreme": null
+  price: 4490000
+  price_unit: KRW
+
+- id: macbook-pro-14-m2-pro
+  name: MacBook Pro 14-inch (M2 Pro)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 14.2
+    unit: inch
+    resolution: "3024 x 1964"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 70
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 16
+    - 32
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m2-pro
+  gpu: "16-core or 19-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Ventura"
+  release_date: "2023-01"
+  weight: 1600
+  weight_unit: g
+  dimensions: "312.6 x 221.2 x 15.5 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 96
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2600
+      multi: 15000
+    "3dmark_wild_life_extreme": null
+  price: 2990000
+  price_unit: KRW
+
+- id: macbook-pro-16-m2-max
+  name: MacBook Pro 16-inch (M2 Max)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 16.2
+    unit: inch
+    resolution: "3456 x 2234"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 100
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 32
+    - 64
+    - 96
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m2-max
+  gpu: "30-core or 38-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Ventura"
+  release_date: "2023-01"
+  weight: 2210
+  weight_unit: g
+  dimensions: "355.7 x 248.1 x 16.8 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 140
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2700
+      multi: 15000
+    "3dmark_wild_life_extreme": null
+  price: 4990000
+  price_unit: KRW
+
+- id: macbook-pro-14-m3-pro
+  name: MacBook Pro 14-inch (M3 Pro)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 14.2
+    unit: inch
+    resolution: "3024 x 1964"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 70
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 18
+    - 36
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m3-pro
+  gpu: "14-core or 18-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Sonoma"
+  release_date: "2023-10"
+  weight: 1600
+  weight_unit: g
+  dimensions: "312.6 x 221.2 x 15.5 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 96
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 3000
+      multi: 21000
+    "3dmark_wild_life_extreme": null
+  price: 3290000
+  price_unit: KRW
+
+- id: macbook-pro-14-m3-max
+  name: MacBook Pro 14-inch (M3 Max)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 14.2
+    unit: inch
+    resolution: "3024 x 1964"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 70
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 36
+    - 48
+    - 64
+    - 96
+    - 128
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m3-max
+  gpu: "30-core or 40-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Sonoma"
+  release_date: "2023-10"
+  weight: 1600
+  weight_unit: g
+  dimensions: "312.6 x 221.2 x 15.5 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 96
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 3100
+      multi: 28000
+    "3dmark_wild_life_extreme": null
+  price: 4490000
   price_unit: KRW
 
 - id: macbook-pro-16-m3-max
@@ -258,5 +2064,62 @@
       multi: 21000
     "3dmark_wild_life_extreme": null
   price: 4990000
+  price_unit: KRW
+
+# 마지막 Intel MacBook (비교용)
+
+- id: macbook-pro-16-intel-i9
+  name: MacBook Pro 16-inch (Intel Core i9)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 16
+    unit: inch
+    resolution: "3072 x 1920"
+    type: "Retina"
+    refresh_rate: 60
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 100
+    unit: Wh
+    charging: "USB-C"
+  memory:
+    - 16
+    - 32
+    - 64
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: intel-core-i9-9980hk
+  gpu: "AMD Radeon Pro 5500M or 5600M"
+  camera:
+    rear: null
+    front: "720p FaceTime HD"
+  os: "macOS Catalina"
+  release_date: "2019-11"
+  weight: 2000
+  weight_unit: g
+  dimensions: "357.9 x 245.9 x 16.2 mm"
+  connectivity:
+    bluetooth: "5.0"
+    wifi: "Wi-Fi 5 (802.11ac)"
+    cellular: null
+  charging:
+    wired_max: 96
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 1200
+      multi: 8000
+    "3dmark_wild_life_extreme": null
+  price: 3990000
   price_unit: KRW
 
