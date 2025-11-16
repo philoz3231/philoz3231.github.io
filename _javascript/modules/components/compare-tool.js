@@ -71,12 +71,34 @@ export function initCompareTool() {
     return apData.filter(ap => ap.manufacturer === manufacturer);
   }
 
+  // 실제 존재하는 AP 제조사 목록 가져오기
+  function getAPManufacturers() {
+    const manufacturers = new Set();
+    apData.forEach(ap => {
+      if (ap.manufacturer) {
+        manufacturers.add(ap.manufacturer);
+      }
+    });
+    return Array.from(manufacturers).sort();
+  }
+
   // 디바이스 필터링 (중분류: 제조사, 소분류: 카테고리)
   function filterDevicesByCategory(manufacturer, subcategory) {
     return deviceData.filter(device => 
       device.manufacturer === manufacturer && 
       device.category === subcategory
     );
+  }
+
+  // 실제 존재하는 디바이스 제조사 목록 가져오기
+  function getDeviceManufacturers() {
+    const manufacturers = new Set();
+    deviceData.forEach(device => {
+      if (device.manufacturer) {
+        manufacturers.add(device.manufacturer);
+      }
+    });
+    return Array.from(manufacturers).sort();
   }
 
   // 태그 생성
@@ -758,8 +780,12 @@ export function initCompareTool() {
     document.querySelectorAll('.category-column-main .category-item').forEach(item => {
       item.classList.remove('active');
     });
-    document.getElementById('subcategory-column').innerHTML = '<p class="category-placeholder">대분류를 선택하세요</p>';
-    document.getElementById('items-column').innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
+    const subcategoryColumn = document.getElementById('subcategory-column');
+    const itemsColumn = document.getElementById('items-column');
+    subcategoryColumn.style.display = 'flex'; // 초기 상태에서는 표시
+    itemsColumn.style.display = 'flex'; // 초기 상태에서는 표시
+    subcategoryColumn.innerHTML = '<p class="category-placeholder">대분류를 선택하세요</p>';
+    itemsColumn.innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
     document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">소분류를 선택하세요</p>';
     
     // 체크박스 모두 해제
@@ -783,38 +809,62 @@ export function initCompareTool() {
     const itemsColumn = document.getElementById('items-column');
 
     if (category === 'ap') {
-      // AP 중분류 표시
+      // AP는 중분류 컬럼 표시 (실제 존재하는 제조사만)
+      subcategoryColumn.style.display = 'flex';
       subcategoryColumn.innerHTML = '';
-      const manufacturers = ['Apple', 'Intel', 'AMD'];
-      manufacturers.forEach(manufacturer => {
-        const item = document.createElement('div');
-        item.className = 'category-item';
-        item.dataset.category = 'ap';
-        item.dataset.manufacturer = manufacturer;
-        item.innerHTML = `<span class="category-name">${manufacturer}</span>`;
-        item.addEventListener('mouseenter', () => handleSubCategoryHover(category, manufacturer));
-        item.addEventListener('click', () => handleSubCategoryClick(category, manufacturer));
-        subcategoryColumn.appendChild(item);
-      });
+      
+      // items-column은 숨김 (AP는 소분류가 없음)
+      itemsColumn.style.display = 'none';
+      itemsColumn.innerHTML = '';
+      
+      // 실제 데이터에서 존재하는 제조사만 가져오기
+      const manufacturers = getAPManufacturers();
+      
+      if (manufacturers.length > 0) {
+        manufacturers.forEach(manufacturer => {
+          const item = document.createElement('div');
+          item.className = 'category-item';
+          item.dataset.category = 'ap';
+          item.dataset.manufacturer = manufacturer;
+          item.innerHTML = `<span class="category-name">${manufacturer}</span>`;
+          item.addEventListener('mouseenter', () => handleSubCategoryHover(category, manufacturer));
+          item.addEventListener('click', () => handleSubCategoryClick(category, manufacturer));
+          subcategoryColumn.appendChild(item);
+        });
+      } else {
+        subcategoryColumn.innerHTML = '<p class="category-placeholder">항목이 없습니다</p>';
+      }
+      
+      document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
     } else if (category === 'device') {
-      // 디바이스 중분류 표시
+      // 디바이스는 중분류 컬럼 표시 (실제 존재하는 제조사만)
+      subcategoryColumn.style.display = 'flex';
       subcategoryColumn.innerHTML = '';
-      const manufacturers = ['Apple', 'Samsung', 'Microsoft'];
-      manufacturers.forEach(manufacturer => {
-        const item = document.createElement('div');
-        item.className = 'category-item';
-        item.dataset.category = 'device';
-        item.dataset.manufacturer = manufacturer;
-        item.innerHTML = `<span class="category-name">${manufacturer}</span>`;
-        item.addEventListener('mouseenter', () => handleSubCategoryHover(category, manufacturer));
-        item.addEventListener('click', () => handleSubCategoryClick(category, manufacturer));
-        subcategoryColumn.appendChild(item);
-      });
+      
+      // items-column도 표시
+      itemsColumn.style.display = 'flex';
+      itemsColumn.innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
+      
+      // 실제 데이터에서 존재하는 제조사만 가져오기
+      const manufacturers = getDeviceManufacturers();
+      
+      if (manufacturers.length > 0) {
+        manufacturers.forEach(manufacturer => {
+          const item = document.createElement('div');
+          item.className = 'category-item';
+          item.dataset.category = 'device';
+          item.dataset.manufacturer = manufacturer;
+          item.innerHTML = `<span class="category-name">${manufacturer}</span>`;
+          item.addEventListener('mouseenter', () => handleSubCategoryHover(category, manufacturer));
+          item.addEventListener('click', () => handleSubCategoryClick(category, manufacturer));
+          subcategoryColumn.appendChild(item);
+        });
+      } else {
+        subcategoryColumn.innerHTML = '<p class="category-placeholder">항목이 없습니다</p>';
+      }
+      
+      document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">소분류를 선택하세요</p>';
     }
-
-    // 오른쪽 컬럼 초기화
-    itemsColumn.innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
-    document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">소분류를 선택하세요</p>';
   }
 
   // 대분류 클릭 처리
@@ -838,7 +888,8 @@ export function initCompareTool() {
     const itemListColumn = document.getElementById('item-list-column');
 
     if (category === 'ap') {
-      // AP는 바로 아이템 목록 컬럼에 표시
+      // AP는 중분류가 없으므로 이 함수는 호출되지 않아야 함
+      // 하지만 안전을 위해 처리
       const items = filterAPsByManufacturer(manufacturer);
       showItemListInColumn(items, category);
     } else if (category === 'device') {

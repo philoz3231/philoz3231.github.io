@@ -50,6 +50,10 @@
         border-right: none;
       }
 
+      &[style*="display: none"] {
+        border-right: none;
+      }
+
       .category-placeholder {
         padding: 1rem;
         margin: 0;
