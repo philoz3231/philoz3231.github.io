@@ -14,6 +14,7 @@ tabs:
   categories: 카테고리
   tags: 태그
   archives: 아카이브
+  compare: 비교
   about: 정보
 
 # the text displayed in the search bar & search results
@@ -82,3 +83,18 @@ df:
 categories:
   category_measure: 카테고리
   post_measure: 포스트
+
+# compare tool page
+compare:
+  title: 스펙 비교
+  description: CPU나 기기를 선택하여 스펙을 비교해보세요.
+  type_label: 비교 타입
+  select_type: 타입 선택
+  device: 기기
+  items_label: 비교 항목 (2개 이상 선택)
+  select_type_first: 먼저 타입을 선택하세요
+  multi_select_hint: Ctrl/Cmd 키를 누른 채로 여러 항목을 선택할 수 있습니다.
+  compare_button: 비교하기
+  clear_button: 초기화
+  specs_table: 스펙 비교표
+  charts: 스펙 차트

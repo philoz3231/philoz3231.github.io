@@ -1,0 +1,313 @@
+# 기기 데이터
+# 스마트폰, 태블릿 등의 스펙 정보를 저장합니다
+
+- id: iphone-15-pro-max
+  name: iPhone 15 Pro Max
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.7
+    unit: inch
+    resolution: "2796 x 1290"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 4441
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a17-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 17"
+  release_date: "2023-09"
+  weight: 221
+  weight_unit: g
+  dimensions: "159.9 x 76.7 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 7200
+    "3dmark_wild_life_extreme": 4200
+  price: 1590000
+  price_unit: KRW
+
+- id: iphone-15-pro
+  name: iPhone 15 Pro
+  type: 디바이스
+  manufacturer: Apple
+  category: smartphone
+  display:
+    size: 6.1
+    unit: inch
+    resolution: "2556 x 1179"
+    type: "Super Retina XDR OLED"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 3274
+    unit: mAh
+    charging: "USB-C, MagSafe, Qi"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 128
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: apple-a17-pro
+  gpu: "6-core GPU"
+  camera:
+    rear: "48MP + 12MP + 12MP"
+    front: "12MP"
+  os: "iOS 17"
+  release_date: "2023-09"
+  weight: 187
+  weight_unit: g
+  dimensions: "146.6 x 70.6 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 7200
+    "3dmark_wild_life_extreme": 4200
+  price: 1350000
+  price_unit: KRW
+
+- id: samsung-galaxy-s24-ultra
+  name: Samsung Galaxy S24 Ultra
+  type: 디바이스
+  manufacturer: Samsung
+  category: smartphone
+  display:
+    size: 6.8
+    unit: inch
+    resolution: "3120 x 1440"
+    type: "Dynamic AMOLED 2X"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 5000
+    unit: mAh
+    charging: "USB-C, Wireless, Reverse"
+  memory: 12
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+  storage_unit: GB
+  cpu: snapdragon-8-gen-3
+  gpu: "Adreno 750"
+  camera:
+    rear: "200MP + 50MP + 12MP + 10MP"
+    front: "12MP"
+  os: "Android 14 (One UI 6.1)"
+  release_date: "2024-01"
+  weight: 233
+  weight_unit: g
+  dimensions: "162.3 x 79.0 x 8.6 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 7 (802.11be)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 45
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2200
+      multi: 6800
+    "3dmark_wild_life_extreme": 3800
+  price: 1490000
+  price_unit: KRW
+
+- id: ipad-pro-13-m4
+  name: iPad Pro 13-inch (M4)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 13
+    unit: inch
+    resolution: "2752 x 2064"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 10758
+    unit: mAh
+    charging: "USB-C"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+    - 2048
+  storage_unit: GB
+  cpu: apple-m4
+  gpu: "10-core GPU"
+  camera:
+    rear: "12MP + 10MP"
+    front: "12MP"
+  os: "iPadOS 17"
+  release_date: "2024-05"
+  weight: 579
+  weight_unit: g
+  dimensions: "281.5 x 215.5 x 5.1 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 35
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    "3dmark_wild_life_extreme": null
+  price: 1690000
+  price_unit: KRW
+
+- id: ipad-pro-11-m4
+  name: iPad Pro 11-inch (M4)
+  type: 디바이스
+  manufacturer: Apple
+  category: tablet
+  display:
+    size: 11
+    unit: inch
+    resolution: "2420 x 1668"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 7538
+    unit: mAh
+    charging: "USB-C"
+  memory: 8
+  memory_unit: GB
+  storage:
+    - 256
+    - 512
+    - 1024
+    - 2048
+  storage_unit: GB
+  cpu: apple-m4
+  gpu: "10-core GPU"
+  camera:
+    rear: "12MP + 10MP"
+    front: "12MP"
+  os: "iPadOS 17"
+  release_date: "2024-05"
+  weight: 444
+  weight_unit: g
+  dimensions: "247.6 x 178.5 x 5.1 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 35
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    "3dmark_wild_life_extreme": null
+  price: 1290000
+  price_unit: KRW
+
+- id: macbook-pro-16-m3-max
+  name: MacBook Pro 16-inch (M3 Max)
+  type: 디바이스
+  manufacturer: Apple
+  category: laptop
+  display:
+    size: 16.2
+    unit: inch
+    resolution: "3456 x 2234"
+    type: "Liquid Retina XDR"
+    refresh_rate: 120
+    refresh_rate_unit: Hz
+  battery:
+    capacity: 100
+    unit: Wh
+    charging: "MagSafe 3, USB-C"
+  memory:
+    - 36
+    - 48
+    - 64
+    - 96
+    - 128
+  memory_unit: GB
+  storage:
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+  storage_unit: GB
+  cpu: apple-m3-max
+  gpu: "30-core or 40-core GPU"
+  camera:
+    rear: null
+    front: "1080p FaceTime HD"
+  os: "macOS Sonoma"
+  release_date: "2023-10"
+  weight: 2190
+  weight_unit: g
+  dimensions: "355.7 x 248.1 x 16.8 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 140
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 21000
+    "3dmark_wild_life_extreme": null
+  price: 4990000
+  price_unit: KRW
+
