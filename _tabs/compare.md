@@ -5,10 +5,10 @@ order: 4
 ---
 
 <script id="compare-data" type="application/json">
-{%- assign cpus_json = site.data.cpus | jsonify -%}
+{%- assign aps_json = site.data.aps | jsonify -%}
 {%- assign devices_json = site.data.devices | jsonify -%}
 {
-  "cpus": {{ cpus_json }},
+  "aps": {{ aps_json }},
   "devices": {{ devices_json }}
 }
 </script>
@@ -27,7 +27,7 @@ order: 4
         </label>
         <select id="compare-type" class="form-select">
           <option value="">{{ site.data.locales[site.lang].compare.select_type | default: "타입 선택" }}</option>
-          <option value="cpu">CPU</option>
+          <option value="ap">AP</option>
           <option value="device">{{ site.data.locales[site.lang].compare.device | default: "기기" }}</option>
         </select>
       </div>

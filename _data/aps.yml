@@ -1,8 +1,9 @@
-# CPU 데이터
-# 각 CPU의 스펙 정보를 저장합니다
+# AP 데이터
+# 각 AP의 스펙 정보를 저장합니다
 
 - id: apple-m5
   name: Apple M5
+  type: AP
   manufacturer: Apple
   cores:
     performance: 4
@@ -29,6 +30,7 @@
 
 - id: apple-m4
   name: Apple M4
+  type: AP
   manufacturer: Apple
   cores:
     performance: 4
@@ -55,6 +57,7 @@
 
 - id: apple-m3
   name: Apple M3
+  type: AP
   manufacturer: Apple
   cores:
     performance: 4
@@ -81,6 +84,7 @@
 
 - id: intel-core-i9-14900k
   name: Intel Core i9-14900K
+  type: AP
   manufacturer: Intel
   cores:
     performance: 8
@@ -107,6 +111,7 @@
 
 - id: amd-ryzen-9-7950x
   name: AMD Ryzen 9 7950X
+  type: AP
   manufacturer: AMD
   cores:
     performance: 16
@@ -133,6 +138,7 @@
 
 - id: snapdragon-8-gen-3
   name: Snapdragon 8 Gen 3
+  type: AP
   manufacturer: Qualcomm
   cores:
     performance: 1

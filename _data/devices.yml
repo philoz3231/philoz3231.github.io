@@ -3,6 +3,7 @@
 
 - id: iphone-15-pro-max
   name: iPhone 15 Pro Max
+  type: 디바이스
   manufacturer: Apple
   category: smartphone
   display:
@@ -38,6 +39,7 @@
 
 - id: iphone-15-pro
   name: iPhone 15 Pro
+ㄷ  type: 디바이스
   manufacturer: Apple
   category: smartphone
   display:
@@ -74,6 +76,7 @@
 
 - id: samsung-galaxy-s24-ultra
   name: Samsung Galaxy S24 Ultra
+  type: 디바이스
   manufacturer: Samsung
   category: smartphone
   display:
@@ -109,6 +112,7 @@
 
 - id: ipad-pro-13-m4
   name: iPad Pro 13-inch (M4)
+  type: 디바이스
   manufacturer: Apple
   category: tablet
   display:
@@ -145,6 +149,7 @@
 
 - id: ipad-pro-11-m4
   name: iPad Pro 11-inch (M4)
+  type: 디바이스
   manufacturer: Apple
   category: tablet
   display:
@@ -181,6 +186,7 @@
 
 - id: macbook-pro-16-m3-max
   name: MacBook Pro 16-inch (M3 Max)
+  type: 디바이스
   manufacturer: Apple
   category: laptop
   display:

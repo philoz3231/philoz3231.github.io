@@ -38,10 +38,11 @@ export function initCompareTool() {
 
   console.log('비교 툴 초기화 시작');
 
-  let cpuData = [];
+  let apData = [];
   let deviceData = [];
   let selectedItems = [];
   let charts = [];
+  let dataLoaded = false;
 
   // 데이터 로드
   function loadData() {
@@ -60,24 +61,27 @@ export function initCompareTool() {
       }
 
       const data = JSON.parse(scriptContent);
-      cpuData = Array.isArray(data.cpus) ? data.cpus : [];
+      apData = Array.isArray(data.aps) ? data.aps : [];
       deviceData = Array.isArray(data.devices) ? data.devices : [];
+      dataLoaded = true;
       
       console.log('데이터 로드 완료:', { 
-        cpus: cpuData.length, 
+        aps: apData.length, 
         devices: deviceData.length,
-        sampleCpu: cpuData[0],
-        sampleDevice: deviceData[0]
+        sampleAp: apData[0],
+        sampleDevice: deviceData[0],
+        rawData: data
       });
     } catch (error) {
       console.error('데이터 파싱 실패:', error);
       console.error('데이터 스크립트 내용 (처음 500자):', dataScript.textContent.substring(0, 500));
+      dataLoaded = false;
     }
   }
 
   // 타입 선택 시 항목 목록 업데이트
   function updateItemsList() {
-    const selectedType = compareTypeSelect.value;
+    const selectedType = compareTypeSelect.value ? compareTypeSelect.value.trim() : '';
     compareItemsSelect.innerHTML = '';
     compareItemsSelect.disabled = !selectedType;
 
@@ -87,13 +91,46 @@ export function initCompareTool() {
       return;
     }
 
-    const items = selectedType === 'cpu' ? cpuData : deviceData;
+    if (!dataLoaded) {
+      console.warn('데이터가 아직 로드되지 않았습니다. 다시 시도합니다...');
+      loadData();
+    }
+
+    console.log('타입 선택:', selectedType, '타입 비교:', {
+      isAp: selectedType === 'ap',
+      isDevice: selectedType === 'device',
+      selectedTypeLength: selectedType.length,
+      selectedTypeCharCodes: selectedType.split('').map(c => c.charCodeAt(0))
+    });
+    console.log('AP 데이터:', { count: apData.length, data: apData });
+    console.log('디바이스 데이터:', { count: deviceData.length, data: deviceData });
+
+    // 타입에 따라 올바른 데이터 선택
+    let items;
+    if (selectedType === 'ap') {
+      items = apData;
+    } else if (selectedType === 'device') {
+      items = deviceData;
+    } else {
+      console.error('알 수 없는 타입:', selectedType);
+      compareItemsSelect.innerHTML = '<option value="">알 수 없는 타입입니다</option>';
+      return;
+    }
     
-    console.log('항목 목록 업데이트:', { type: selectedType, itemsCount: items.length, items });
+    console.log('선택된 항목 데이터:', { 
+      selectedType, 
+      itemsCount: items.length, 
+      items
+    });
     
     if (items.length === 0) {
       compareItemsSelect.innerHTML = '<option value="">데이터를 불러올 수 없습니다</option>';
-      console.warn('데이터가 비어있습니다:', { cpuData, deviceData });
+      console.warn('데이터가 비어있습니다:', { 
+        selectedType,
+        apData: { count: apData.length, data: apData },
+        deviceData: { count: deviceData.length, data: deviceData },
+        dataLoaded
+      });
       return;
     }
 
@@ -124,7 +161,7 @@ export function initCompareTool() {
       return;
     }
 
-    const items = selectedType === 'cpu' ? cpuData : deviceData;
+    const items = selectedType === 'ap' ? apData : deviceData;
     selectedItems = selectedOptions.map(option => {
       return items.find(item => item.id === option.value);
     }).filter(item => item !== undefined);
@@ -151,7 +188,7 @@ export function initCompareTool() {
     if (selectedItems.length === 0) return;
 
     const selectedType = compareTypeSelect.value;
-    const specs = selectedType === 'cpu' ? getCPUSpecs() : getDeviceSpecs();
+    const specs = selectedType === 'ap' ? getAPSpecs() : getDeviceSpecs();
 
     // 헤더 생성
     const headerRow = document.createElement('tr');
@@ -188,8 +225,8 @@ export function initCompareTool() {
     });
   }
 
-  // CPU 스펙 목록
-  function getCPUSpecs() {
+  // AP 스펙 목록
+  function getAPSpecs() {
     return [
       { key: 'manufacturer', label: '제조사' },
       { key: 'cores.total', label: '총 코어 수' },
@@ -317,21 +354,21 @@ export function initCompareTool() {
 
     const selectedType = compareTypeSelect.value;
     
-    if (selectedType === 'cpu') {
-      renderCPUCharts(container);
+    if (selectedType === 'ap') {
+      renderAPCharts(container);
     } else {
       renderDeviceCharts(container);
     }
   }
 
-  // CPU 차트 렌더링
-  function renderCPUCharts(container) {
+  // AP 차트 렌더링
+  function renderAPCharts(container) {
     // Chart.js가 로드되었는지 확인
     if (typeof Chart === 'undefined') {
       container.innerHTML = '<p class="text-muted">차트 라이브러리를 불러오는 중...</p>';
       // Chart.js 로드 시도
       loadChartJS().then(() => {
-        renderCPUCharts(container);
+        renderAPCharts(container);
       });
       return;
     }
