@@ -1,0 +1,38 @@
+# Qualcomm AP 데이터
+
+- id: snapdragon-8-gen-3
+  name: Snapdragon 8 Gen 3
+  type: AP
+  manufacturer: Qualcomm
+  cores:
+    performance: 1
+    efficiency: 5
+    total: 8
+  clock_speed:
+    base: 2.27
+    boost: 3.39
+    unit: GHz
+  process: 4nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "12 MB"
+  tdp: 5
+  tdp_unit: W
+  release_date: "2023-10"
+  architecture: ARM
+  gpu_cores: "Adreno 750"
+  neural_engine: "Hexagon NPU"
+  memory_support: "LPDDR5X-4800"
+  max_memory: 24
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2200
+      multi: 6800
+    cinebench:
+      single: 1500
+      multi: 12000
+  price: null
+  price_unit: null
+

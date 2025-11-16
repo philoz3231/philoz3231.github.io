@@ -1,0 +1,38 @@
+# Intel AP 데이터
+
+- id: intel-core-i9-14900k
+  name: Intel Core i9-14900K
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 16
+    total: 24
+  clock_speed:
+    base: 3.2
+    boost: 6.0
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "36 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2023-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3100
+      multi: 28500
+    cinebench:
+      single: 2300
+      multi: 42000
+  price: 850000
+  price_unit: KRW
+

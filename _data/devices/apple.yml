@@ -1,5 +1,4 @@
-# 기기 데이터
-# 스마트폰, 태블릿 등의 스펙 정보를 저장합니다
+# Apple 디바이스 데이터
 
 - id: iphone-15-pro-max
   name: iPhone 15 Pro Max
@@ -100,56 +99,6 @@
       multi: 7200
     "3dmark_wild_life_extreme": 4200
   price: 1350000
-  price_unit: KRW
-
-- id: samsung-galaxy-s24-ultra
-  name: Samsung Galaxy S24 Ultra
-  type: 디바이스
-  manufacturer: Samsung
-  category: smartphone
-  display:
-    size: 6.8
-    unit: inch
-    resolution: "3120 x 1440"
-    type: "Dynamic AMOLED 2X"
-    refresh_rate: 120
-    refresh_rate_unit: Hz
-  battery:
-    capacity: 5000
-    unit: mAh
-    charging: "USB-C, Wireless, Reverse"
-  memory: 12
-  memory_unit: GB
-  storage:
-    - 256
-    - 512
-    - 1024
-  storage_unit: GB
-  cpu: snapdragon-8-gen-3
-  gpu: "Adreno 750"
-  camera:
-    rear: "200MP + 50MP + 12MP + 10MP"
-    front: "12MP"
-  os: "Android 14 (One UI 6.1)"
-  release_date: "2024-01"
-  weight: 233
-  weight_unit: g
-  dimensions: "162.3 x 79.0 x 8.6 mm"
-  connectivity:
-    bluetooth: "5.3"
-    wifi: "Wi-Fi 7 (802.11be)"
-    cellular: "5G (sub-6GHz and mmWave)"
-  charging:
-    wired_max: 45
-    wired_unit: W
-    wireless_max: 15
-    wireless_unit: W
-  benchmarks:
-    geekbench:
-      single: 2200
-      multi: 6800
-    "3dmark_wild_life_extreme": 3800
-  price: 1490000
   price_unit: KRW
 
 - id: ipad-pro-13-m4

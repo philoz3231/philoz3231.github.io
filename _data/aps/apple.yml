@@ -1,0 +1,110 @@
+# Apple AP 데이터
+
+- id: apple-m5
+  name: Apple M5
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.8
+    boost: 4.2
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "32 MB"
+  tdp: 20
+  tdp_unit: W
+  release_date: "2024-10"
+  architecture: ARM
+  gpu_cores: 10
+  neural_engine: "16-core"
+  memory_support: "LPDDR5X-7500"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 15200
+    cinebench:
+      single: 2200
+      multi: 18500
+  price: null
+  price_unit: null
+
+- id: apple-m4
+  name: Apple M4
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.4
+    boost: 4.0
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 18
+  tdp_unit: W
+  release_date: "2024-05"
+  architecture: ARM
+  gpu_cores: 10
+  neural_engine: "16-core"
+  memory_support: "LPDDR5X-7500"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    cinebench:
+      single: 2100
+      multi: 17500
+  price: null
+  price_unit: null
+
+- id: apple-m3
+  name: Apple M3
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.0
+    boost: 4.05
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 15
+  tdp_unit: W
+  release_date: "2023-10"
+  architecture: ARM
+  gpu_cores: 10
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2700
+      multi: 13800
+    cinebench:
+      single: 2000
+      multi: 16800
+  price: null
+  price_unit: null
+

@@ -1,0 +1,38 @@
+# AMD AP 데이터
+
+- id: amd-ryzen-9-7950x
+  name: AMD Ryzen 9 7950X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 16
+    efficiency: 0
+    total: 16
+  clock_speed:
+    base: 4.5
+    boost: 5.7
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "64 MB"
+  tdp: 170
+  tdp_unit: W
+  release_date: "2022-09"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 26500
+    cinebench:
+      single: 2200
+      multi: 38000
+  price: 750000
+  price_unit: KRW
+

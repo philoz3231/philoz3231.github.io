@@ -5,8 +5,26 @@ order: 4
 ---
 
 <script id="compare-data" type="application/json">
-{%- assign aps_json = site.data.aps | jsonify -%}
-{%- assign devices_json = site.data.devices | jsonify -%}
+{%- comment -%} AP 데이터 합치기 {%- endcomment -%}
+{%- assign all_aps = site.data.aps.apple -%}
+{%- if site.data.aps.intel -%}
+  {%- assign all_aps = all_aps | concat: site.data.aps.intel -%}
+{%- endif -%}
+{%- if site.data.aps.amd -%}
+  {%- assign all_aps = all_aps | concat: site.data.aps.amd -%}
+{%- endif -%}
+{%- if site.data.aps.qualcomm -%}
+  {%- assign all_aps = all_aps | concat: site.data.aps.qualcomm -%}
+{%- endif -%}
+{%- assign aps_json = all_aps | jsonify -%}
+
+{%- comment -%} 디바이스 데이터 합치기 {%- endcomment -%}
+{%- assign all_devices = site.data.devices.apple -%}
+{%- if site.data.devices.samsung -%}
+  {%- assign all_devices = all_devices | concat: site.data.devices.samsung -%}
+{%- endif -%}
+{%- assign devices_json = all_devices | jsonify -%}
+
 {
   "aps": {{ aps_json }},
   "devices": {{ devices_json }}
