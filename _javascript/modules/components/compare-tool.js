@@ -617,13 +617,17 @@ export function initCompareTool() {
   // 중분류 호버 처리
   function handleSubCategoryHover(category, manufacturer) {
     const itemsColumn = document.getElementById('items-column');
+    const itemListColumn = document.getElementById('item-list-column');
 
     if (category === 'ap') {
       // AP는 바로 아이템 목록 컬럼에 표시
       const items = filterAPsByManufacturer(manufacturer);
       showItemListInColumn(items, category);
     } else if (category === 'device') {
-      // 디바이스는 소분류 표시
+      // 디바이스는 소분류 표시 (하위에 아이템이 있는 경우에만)
+      // 아이템 목록 컬럼 초기화 (이전 호버에서 표시된 아이템 제거)
+      itemListColumn.innerHTML = '<p class="category-placeholder">소분류를 선택하세요</p>';
+      
       itemsColumn.innerHTML = '';
       const subcategories = [
         { value: 'smartphone', label: '스마트폰' },
@@ -631,16 +635,25 @@ export function initCompareTool() {
         { value: 'laptop', label: '노트북' }
       ];
       subcategories.forEach(sub => {
-        const item = document.createElement('div');
-        item.className = 'category-item';
-        item.dataset.category = 'device';
-        item.dataset.manufacturer = manufacturer;
-        item.dataset.subcategory = sub.value;
-        item.innerHTML = `<span class="category-name">${sub.label}</span>`;
-        item.addEventListener('mouseenter', () => handleTertiaryCategoryHover(category, manufacturer, sub.value, item));
-        item.addEventListener('click', () => handleTertiaryCategoryClick(category, manufacturer, sub.value));
-        itemsColumn.appendChild(item);
+        // 해당 소분류에 아이템이 있는지 확인
+        const items = filterDevicesByCategory(manufacturer, sub.value);
+        if (items.length > 0) {
+          const item = document.createElement('div');
+          item.className = 'category-item';
+          item.dataset.category = 'device';
+          item.dataset.manufacturer = manufacturer;
+          item.dataset.subcategory = sub.value;
+          item.innerHTML = `<span class="category-name">${sub.label}</span>`;
+          item.addEventListener('mouseenter', () => handleTertiaryCategoryHover(category, manufacturer, sub.value, item));
+          item.addEventListener('click', () => handleTertiaryCategoryClick(category, manufacturer, sub.value));
+          itemsColumn.appendChild(item);
+        }
       });
+      
+      // 아이템이 하나도 없는 경우
+      if (itemsColumn.children.length === 0) {
+        itemsColumn.innerHTML = '<p class="category-placeholder">해당 제조사의 항목이 없습니다</p>';
+      }
     }
   }
 
