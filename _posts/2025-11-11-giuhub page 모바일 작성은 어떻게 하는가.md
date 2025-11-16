@@ -3,7 +3,7 @@ layout: post
 title: github pages 모바일 작성은 어떻게 하는가
 description:
 tags: [develop, github page]
-categories: [develop, blog]
+categories: [blog]
 ---
 
 # 깃헙 페이지는 모바일에서 작성이 안되는 건가?

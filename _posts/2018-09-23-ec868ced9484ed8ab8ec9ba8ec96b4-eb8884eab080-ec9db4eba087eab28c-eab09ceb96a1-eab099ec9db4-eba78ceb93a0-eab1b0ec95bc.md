@@ -8,7 +8,7 @@ guid: http://localhost/wordpress/?p=1114
 permalink: '/2018/09/23/%ec%86%8c%ed%94%84%ed%8a%b8%ec%9b%a8%ec%96%b4-%eb%88%84%ea%b0%80-%ec%9d%b4%eb%a0%87%ea%b2%8c-%ea%b0%9c%eb%96%a1-%ea%b0%99%ec%9d%b4-%eb%a7%8c%eb%93%a0-%ea%b1%b0%ec%95%bc/'
 image: /assets/wp-content/uploads/2018/09/-182x270.jpeg
 tags: [develop]
-categories: [develop, book]
+categories: [book]
 ---
 <img class="wp-image-1115 size-full" src="/assets/wp-content/uploads/2018/09/-182x270.jpeg" alt="" width="184" height="273"> 
 
