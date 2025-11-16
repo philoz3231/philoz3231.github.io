@@ -21,28 +21,47 @@ order: 4
 
   <div class="compare-tool-controls mb-4">
     <div class="row g-3">
-      <div class="col-12 col-md-4">
-        <label for="compare-type" class="form-label">
-          {{ site.data.locales[site.lang].compare.type_label | default: "비교 타입" }}
+      <div class="col-12">
+        <label class="form-label">
+          {{ site.data.locales[site.lang].compare.category_label | default: "분류 선택" }}
         </label>
-        <select id="compare-type" class="form-select">
-          <option value="">{{ site.data.locales[site.lang].compare.select_type | default: "타입 선택" }}</option>
-          <option value="ap">AP</option>
-          <option value="device">{{ site.data.locales[site.lang].compare.device | default: "기기" }}</option>
-        </select>
-      </div>
-      <div class="col-12 col-md-8">
-        <label for="compare-items" class="form-label">
-          {{ site.data.locales[site.lang].compare.items_label | default: "비교 항목 (2개 이상 선택)" }}
-        </label>
-        <select id="compare-items" class="form-select" multiple size="5" disabled>
-          <option value="">{{ site.data.locales[site.lang].compare.select_type_first | default: "먼저 타입을 선택하세요" }}</option>
-        </select>
-        <small class="form-text text-muted">
-          {{ site.data.locales[site.lang].compare.multi_select_hint | default: "Ctrl/Cmd 키를 누른 채로 여러 항목을 선택할 수 있습니다." }}
-        </small>
+        <div class="category-columns">
+          <!-- 왼쪽 컬럼: 대분류 -->
+          <div class="category-column category-column-main">
+            <div class="category-item category-main" data-category="ap">
+              <span class="category-name">AP</span>
+            </div>
+            <div class="category-item category-main" data-category="device">
+              <span class="category-name">디바이스</span>
+            </div>
+          </div>
+          
+          <!-- 중간 컬럼: 중분류 -->
+          <div class="category-column category-column-sub" id="subcategory-column">
+            <p class="category-placeholder">대분류를 선택하세요</p>
+          </div>
+          
+          <!-- 오른쪽 컬럼: 소분류 (디바이스만) 또는 아이템 목록 -->
+          <div class="category-column category-column-items" id="items-column">
+            <p class="category-placeholder">중분류를 선택하세요</p>
+          </div>
+          
+          <!-- 아이템 목록 컬럼 (소분류 하위) -->
+          <div class="category-column category-column-item-list" id="item-list-column">
+            <p class="category-placeholder">소분류를 선택하세요</p>
+          </div>
+        </div>
       </div>
     </div>
+    
+    <div class="row mt-4">
+      <div class="col-12">
+        <div id="selected-items-tags" class="selected-items-tags">
+          <p class="text-muted mb-0">분류를 선택하여 항목을 추가하세요</p>
+        </div>
+      </div>
+    </div>
+    
     <div class="row mt-3">
       <div class="col-12">
         <button id="compare-btn" class="btn btn-primary" disabled>

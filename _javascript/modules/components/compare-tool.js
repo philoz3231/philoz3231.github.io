@@ -1,6 +1,6 @@
 /**
  * Compare Tool Component
- * CPU와 기기를 비교하는 툴
+ * AP와 디바이스를 비교하는 툴
  */
 
 export function initCompareTool() {
@@ -17,23 +17,14 @@ export function initCompareTool() {
   }
 
   console.log('DOM 준비 완료, 요소 찾기 시작');
-  const compareTypeSelect = document.getElementById('compare-type');
-  const compareItemsSelect = document.getElementById('compare-items');
   const compareBtn = document.getElementById('compare-btn');
   const clearBtn = document.getElementById('clear-btn');
   const compareResults = document.getElementById('compare-results');
+  const selectedItemsTags = document.getElementById('selected-items-tags');
 
-  console.log('요소 찾기 결과:', {
-    compareTypeSelect: !!compareTypeSelect,
-    compareItemsSelect: !!compareItemsSelect,
-    compareBtn: !!compareBtn,
-    clearBtn: !!clearBtn,
-    compareResults: !!compareResults
-  });
-
-  if (!compareTypeSelect || !compareItemsSelect || !compareBtn) {
-    console.warn('비교 툴 요소를 찾을 수 없습니다. 페이지에 비교 툴이 없거나 아직 로드되지 않았습니다.');
-    return; // 페이지에 비교 툴이 없으면 종료
+  if (!compareBtn || !clearBtn || !selectedItemsTags) {
+    console.warn('비교 툴 요소를 찾을 수 없습니다.');
+    return;
   }
 
   console.log('비교 툴 초기화 시작');
@@ -43,10 +34,10 @@ export function initCompareTool() {
   let selectedItems = [];
   let charts = [];
   let dataLoaded = false;
+  let currentMainCategory = null; // 현재 선택된 대분류
 
   // 데이터 로드
   function loadData() {
-    // Jekyll이 페이지에 포함시킨 데이터에서 로드
     const dataScript = document.getElementById('compare-data');
     if (!dataScript) {
       console.error('비교 데이터 스크립트를 찾을 수 없습니다.');
@@ -67,107 +58,95 @@ export function initCompareTool() {
       
       console.log('데이터 로드 완료:', { 
         aps: apData.length, 
-        devices: deviceData.length,
-        sampleAp: apData[0],
-        sampleDevice: deviceData[0],
-        rawData: data
+        devices: deviceData.length
       });
     } catch (error) {
       console.error('데이터 파싱 실패:', error);
-      console.error('데이터 스크립트 내용 (처음 500자):', dataScript.textContent.substring(0, 500));
       dataLoaded = false;
     }
   }
 
-  // 타입 선택 시 항목 목록 업데이트
-  function updateItemsList() {
-    const selectedType = compareTypeSelect.value ? compareTypeSelect.value.trim() : '';
-    compareItemsSelect.innerHTML = '';
-    compareItemsSelect.disabled = !selectedType;
+  // AP 필터링 (중분류: 제조사)
+  function filterAPsByManufacturer(manufacturer) {
+    return apData.filter(ap => ap.manufacturer === manufacturer);
+  }
 
-    if (!selectedType) {
-      compareItemsSelect.innerHTML = '<option value="">먼저 타입을 선택하세요</option>';
-      compareBtn.disabled = true;
-      return;
-    }
+  // 디바이스 필터링 (중분류: 제조사, 소분류: 카테고리)
+  function filterDevicesByCategory(manufacturer, subcategory) {
+    return deviceData.filter(device => 
+      device.manufacturer === manufacturer && 
+      device.category === subcategory
+    );
+  }
 
-    if (!dataLoaded) {
-      console.warn('데이터가 아직 로드되지 않았습니다. 다시 시도합니다...');
-      loadData();
-    }
-
-    console.log('타입 선택:', selectedType, '타입 비교:', {
-      isAp: selectedType === 'ap',
-      isDevice: selectedType === 'device',
-      selectedTypeLength: selectedType.length,
-      selectedTypeCharCodes: selectedType.split('').map(c => c.charCodeAt(0))
-    });
-    console.log('AP 데이터:', { count: apData.length, data: apData });
-    console.log('디바이스 데이터:', { count: deviceData.length, data: deviceData });
-
-    // 타입에 따라 올바른 데이터 선택
-    let items;
-    if (selectedType === 'ap') {
-      items = apData;
-    } else if (selectedType === 'device') {
-      items = deviceData;
-    } else {
-      console.error('알 수 없는 타입:', selectedType);
-      compareItemsSelect.innerHTML = '<option value="">알 수 없는 타입입니다</option>';
-      return;
-    }
+  // 태그 생성
+  function createTag(item) {
+    const tag = document.createElement('div');
+    tag.className = 'item-tag';
+    tag.dataset.itemId = item.id;
     
-    console.log('선택된 항목 데이터:', { 
-      selectedType, 
-      itemsCount: items.length, 
-      items
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'tag-name';
+    nameSpan.textContent = item.name;
+    
+    const removeBtn = document.createElement('span');
+    removeBtn.className = 'tag-remove';
+    removeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      removeItem(item.id);
     });
     
-    if (items.length === 0) {
-      compareItemsSelect.innerHTML = '<option value="">데이터를 불러올 수 없습니다</option>';
-      console.warn('데이터가 비어있습니다:', { 
-        selectedType,
-        apData: { count: apData.length, data: apData },
-        deviceData: { count: deviceData.length, data: deviceData },
-        dataLoaded
-      });
-      return;
+    tag.appendChild(nameSpan);
+    tag.appendChild(removeBtn);
+    
+    return tag;
+  }
+
+
+  // 항목 제거
+  function removeItem(itemId) {
+    selectedItems = selectedItems.filter(item => item.id !== itemId);
+    
+    const tag = selectedItemsTags.querySelector(`[data-item-id="${itemId}"]`);
+    if (tag) {
+      tag.remove();
     }
 
-    items.forEach(item => {
-      const option = document.createElement('option');
-      option.value = item.id;
-      option.textContent = item.name;
-      compareItemsSelect.appendChild(option);
-    });
+    // 체크박스 해제 (일반 목록)
+    const checkbox = document.getElementById(`item-${itemId}`);
+    if (checkbox) {
+      checkbox.checked = false;
+    }
+
+    // 팝업 내 체크박스 해제
+    const popupCheckbox = document.getElementById(`popup-item-${itemId}`);
+    if (popupCheckbox) {
+      popupCheckbox.checked = false;
+    }
+
+    // 모든 항목 제거 시 대분류 초기화
+    if (selectedItems.length === 0) {
+      currentMainCategory = null;
+      const placeholder = document.createElement('p');
+      placeholder.className = 'text-muted mb-0';
+      placeholder.textContent = '분류를 선택하여 항목을 추가하세요';
+      selectedItemsTags.appendChild(placeholder);
+    }
 
     updateCompareButton();
   }
 
   // 비교 버튼 상태 업데이트
   function updateCompareButton() {
-    const selectedItems = Array.from(compareItemsSelect.selectedOptions);
     compareBtn.disabled = selectedItems.length < 2;
-    clearBtn.disabled = selectedItems.length === 0 && !compareResults.style.display || compareResults.style.display === 'none';
+    clearBtn.disabled = selectedItems.length === 0 && 
+      (!compareResults.style.display || compareResults.style.display === 'none');
   }
 
   // 비교 실행
   function performCompare() {
-    const selectedType = compareTypeSelect.value;
-    const selectedOptions = Array.from(compareItemsSelect.selectedOptions);
-    
-    if (selectedOptions.length < 2) {
-      alert('최소 2개 이상의 항목을 선택해주세요.');
-      return;
-    }
-
-    const items = selectedType === 'ap' ? apData : deviceData;
-    selectedItems = selectedOptions.map(option => {
-      return items.find(item => item.id === option.value);
-    }).filter(item => item !== undefined);
-
     if (selectedItems.length < 2) {
-      alert('선택한 항목을 찾을 수 없습니다.');
+      alert('최소 2개 이상의 항목을 선택해주세요.');
       return;
     }
 
@@ -187,8 +166,8 @@ export function initCompareTool() {
 
     if (selectedItems.length === 0) return;
 
-    const selectedType = compareTypeSelect.value;
-    const specs = selectedType === 'ap' ? getAPSpecs() : getDeviceSpecs();
+    const isAP = currentMainCategory === 'ap';
+    const specs = isAP ? getAPSpecs() : getDeviceSpecs();
 
     // 헤더 생성
     const headerRow = document.createElement('tr');
@@ -284,17 +263,17 @@ export function initCompareTool() {
     // 배열인 경우 처리 (storage, memory 등)
     if (Array.isArray(value)) {
       if (value.length === 0) return null;
-      // 단위 찾기
       const lastKey = keys[keys.length - 1];
       let unit = null;
       if (keys.length > 1) {
-        const parent = item;
+        let parent = item;
         for (let i = 0; i < keys.length - 1; i++) {
           if (parent && typeof parent === 'object' && keys[i] in parent) {
             const nextParent = parent[keys[i]];
             if (i === keys.length - 2 && nextParent && typeof nextParent === 'object') {
               unit = nextParent[lastKey + '_unit'] || nextParent.unit;
             }
+            parent = nextParent;
           }
         }
       } else {
@@ -309,7 +288,6 @@ export function initCompareTool() {
     let unit = null;
     
     if (keys.length > 1) {
-      // 중첩된 객체에서 단위 찾기
       let parent = item;
       for (let i = 0; i < keys.length - 1; i++) {
         if (parent && typeof parent === 'object' && keys[i] in parent) {
@@ -344,7 +322,6 @@ export function initCompareTool() {
     const container = document.getElementById('chart-container');
     container.innerHTML = '';
 
-    // 기존 차트 제거
     charts.forEach(chart => {
       if (chart && typeof chart.destroy === 'function') {
         chart.destroy();
@@ -352,9 +329,7 @@ export function initCompareTool() {
     });
     charts = [];
 
-    const selectedType = compareTypeSelect.value;
-    
-    if (selectedType === 'ap') {
+    if (currentMainCategory === 'ap') {
       renderAPCharts(container);
     } else {
       renderDeviceCharts(container);
@@ -363,10 +338,8 @@ export function initCompareTool() {
 
   // AP 차트 렌더링
   function renderAPCharts(container) {
-    // Chart.js가 로드되었는지 확인
     if (typeof Chart === 'undefined') {
       container.innerHTML = '<p class="text-muted">차트 라이브러리를 불러오는 중...</p>';
-      // Chart.js 로드 시도
       loadChartJS().then(() => {
         renderAPCharts(container);
       });
@@ -557,13 +530,24 @@ export function initCompareTool() {
 
   // 초기화
   function clearComparison() {
-    compareTypeSelect.value = '';
-    compareItemsSelect.innerHTML = '<option value="">먼저 타입을 선택하세요</option>';
-    compareItemsSelect.disabled = true;
-    compareBtn.disabled = true;
-    clearBtn.disabled = true;
-    compareResults.style.display = 'none';
     selectedItems = [];
+    currentMainCategory = null;
+    compareResults.style.display = 'none';
+    
+    selectedItemsTags.innerHTML = '<p class="text-muted mb-0">분류를 선택하여 항목을 추가하세요</p>';
+    
+    // 컬럼 초기화
+    document.querySelectorAll('.category-column-main .category-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    document.getElementById('subcategory-column').innerHTML = '<p class="category-placeholder">대분류를 선택하세요</p>';
+    document.getElementById('items-column').innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
+    document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">소분류를 선택하세요</p>';
+    
+    // 체크박스 모두 해제
+    document.querySelectorAll('.item-checkbox input[type="checkbox"]').forEach(checkbox => {
+      checkbox.checked = false;
+    });
     
     charts.forEach(chart => {
       if (chart && typeof chart.destroy === 'function') {
@@ -571,21 +555,275 @@ export function initCompareTool() {
       }
     });
     charts = [];
+    
+    updateCompareButton();
+  }
+
+  // 대분류 호버 처리
+  function handleMainCategoryHover(category) {
+    const subcategoryColumn = document.getElementById('subcategory-column');
+    const itemsColumn = document.getElementById('items-column');
+
+    if (category === 'ap') {
+      // AP 중분류 표시
+      subcategoryColumn.innerHTML = '';
+      const manufacturers = ['Apple', 'Intel', 'AMD'];
+      manufacturers.forEach(manufacturer => {
+        const item = document.createElement('div');
+        item.className = 'category-item';
+        item.dataset.category = 'ap';
+        item.dataset.manufacturer = manufacturer;
+        item.innerHTML = `<span class="category-name">${manufacturer}</span>`;
+        item.addEventListener('mouseenter', () => handleSubCategoryHover(category, manufacturer));
+        item.addEventListener('click', () => handleSubCategoryClick(category, manufacturer));
+        subcategoryColumn.appendChild(item);
+      });
+    } else if (category === 'device') {
+      // 디바이스 중분류 표시
+      subcategoryColumn.innerHTML = '';
+      const manufacturers = ['Apple', 'Samsung', 'Microsoft'];
+      manufacturers.forEach(manufacturer => {
+        const item = document.createElement('div');
+        item.className = 'category-item';
+        item.dataset.category = 'device';
+        item.dataset.manufacturer = manufacturer;
+        item.innerHTML = `<span class="category-name">${manufacturer}</span>`;
+        item.addEventListener('mouseenter', () => handleSubCategoryHover(category, manufacturer));
+        item.addEventListener('click', () => handleSubCategoryClick(category, manufacturer));
+        subcategoryColumn.appendChild(item);
+      });
+    }
+
+    // 오른쪽 컬럼 초기화
+    itemsColumn.innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
+    document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">소분류를 선택하세요</p>';
+  }
+
+  // 대분류 클릭 처리
+  function handleMainCategoryClick(category) {
+    // 대분류 활성화
+    document.querySelectorAll('.category-column-main .category-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    const clickedItem = document.querySelector(`.category-column-main .category-item[data-category="${category}"]`);
+    if (clickedItem) {
+      clickedItem.classList.add('active');
+    }
+
+    // 호버 처리와 동일하게 하위 항목 표시
+    handleMainCategoryHover(category);
+  }
+
+  // 중분류 호버 처리
+  function handleSubCategoryHover(category, manufacturer) {
+    const itemsColumn = document.getElementById('items-column');
+
+    if (category === 'ap') {
+      // AP는 바로 아이템 목록 컬럼에 표시
+      const items = filterAPsByManufacturer(manufacturer);
+      showItemListInColumn(items, category);
+    } else if (category === 'device') {
+      // 디바이스는 소분류 표시
+      itemsColumn.innerHTML = '';
+      const subcategories = [
+        { value: 'smartphone', label: '스마트폰' },
+        { value: 'tablet', label: '태블릿' },
+        { value: 'laptop', label: '노트북' }
+      ];
+      subcategories.forEach(sub => {
+        const item = document.createElement('div');
+        item.className = 'category-item';
+        item.dataset.category = 'device';
+        item.dataset.manufacturer = manufacturer;
+        item.dataset.subcategory = sub.value;
+        item.innerHTML = `<span class="category-name">${sub.label}</span>`;
+        item.addEventListener('mouseenter', () => handleTertiaryCategoryHover(category, manufacturer, sub.value, item));
+        item.addEventListener('click', () => handleTertiaryCategoryClick(category, manufacturer, sub.value));
+        itemsColumn.appendChild(item);
+      });
+    }
+  }
+
+  // 중분류 클릭 처리
+  function handleSubCategoryClick(category, manufacturer) {
+    // 중분류 활성화
+    document.querySelectorAll('#subcategory-column .category-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    const clickedItem = document.querySelector(`#subcategory-column .category-item[data-manufacturer="${manufacturer}"]`);
+    if (clickedItem) {
+      clickedItem.classList.add('active');
+    }
+
+    // 호버 처리와 동일하게 하위 항목 표시
+    handleSubCategoryHover(category, manufacturer);
+  }
+
+  // 소분류 호버 처리 (디바이스만) - 아이템 목록 컬럼 표시
+  function handleTertiaryCategoryHover(category, manufacturer, subcategory) {
+    const items = filterDevicesByCategory(manufacturer, subcategory);
+    showItemListInColumn(items, category);
+  }
+
+  // 소분류 클릭 처리 (디바이스만)
+  function handleTertiaryCategoryClick(category, manufacturer, subcategory) {
+    // 소분류 활성화
+    document.querySelectorAll('#items-column .category-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    const clickedItem = document.querySelector(`#items-column .category-item[data-subcategory="${subcategory}"]`);
+    if (clickedItem) {
+      clickedItem.classList.add('active');
+    }
+
+    // 클릭 시 아이템 목록 컬럼에 표시 (고정)
+    const items = filterDevicesByCategory(manufacturer, subcategory);
+    showItemListInColumn(items, category);
+  }
+
+  // 아이템 목록을 컬럼에 표시 (소분류 하위)
+  function showItemListInColumn(items, mainCategory) {
+    const itemListColumn = document.getElementById('item-list-column');
+    
+    if (items.length === 0) {
+      itemListColumn.innerHTML = '<p class="category-placeholder">해당 분류에 항목이 없습니다</p>';
+      return;
+    }
+
+    const itemList = document.createElement('div');
+    itemList.className = 'item-list';
+
+    items.forEach(item => {
+      const checkboxDiv = document.createElement('div');
+      checkboxDiv.className = 'item-checkbox';
+      
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = `item-${item.id}`;
+      checkbox.value = item.id;
+      checkbox.checked = selectedItems.some(selected => selected.id === item.id);
+      checkbox.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          addItem(item, mainCategory);
+        } else {
+          removeItem(item.id);
+        }
+      });
+
+      const label = document.createElement('label');
+      label.htmlFor = `item-${item.id}`;
+      label.textContent = item.name;
+
+      checkboxDiv.appendChild(checkbox);
+      checkboxDiv.appendChild(label);
+      itemList.appendChild(checkboxDiv);
+    });
+
+    itemListColumn.innerHTML = '';
+    itemListColumn.appendChild(itemList);
+  }
+
+  // 아이템 목록 표시 (AP의 경우 오른쪽 컬럼에 직접 표시)
+  function showItemList(items, mainCategory) {
+    const itemsColumn = document.getElementById('items-column');
+    
+    if (items.length === 0) {
+      itemsColumn.innerHTML = '<p class="category-placeholder">해당 분류에 항목이 없습니다</p>';
+      return;
+    }
+
+    const itemList = document.createElement('div');
+    itemList.className = 'item-list';
+
+    items.forEach(item => {
+      const checkboxDiv = document.createElement('div');
+      checkboxDiv.className = 'item-checkbox';
+      
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = `item-${item.id}`;
+      checkbox.value = item.id;
+      checkbox.checked = selectedItems.some(selected => selected.id === item.id);
+      checkbox.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          addItem(item, mainCategory);
+        } else {
+          removeItem(item.id);
+        }
+      });
+
+      const label = document.createElement('label');
+      label.htmlFor = `item-${item.id}`;
+      label.textContent = item.name;
+
+      checkboxDiv.appendChild(checkbox);
+      checkboxDiv.appendChild(label);
+      itemList.appendChild(checkboxDiv);
+    });
+
+    itemsColumn.innerHTML = '';
+    itemsColumn.appendChild(itemList);
+  }
+
+  // 단일 항목 추가
+  function addItem(item, mainCategory) {
+    // 대분류 검증
+    if (currentMainCategory && currentMainCategory !== mainCategory) {
+      if (confirm('같은 대분류(AP 또는 디바이스)의 항목만 비교할 수 있습니다.\n기존 선택을 초기화하고 새로 선택하시겠습니까?')) {
+        clearComparison();
+        currentMainCategory = mainCategory;
+      } else {
+        // 체크박스 해제
+        const checkbox = document.getElementById(`item-${item.id}`);
+        if (checkbox) {
+          checkbox.checked = false;
+        }
+        return;
+      }
+    }
+
+    // 첫 선택 시 대분류 설정
+    if (!currentMainCategory) {
+      currentMainCategory = mainCategory;
+    }
+
+    // 중복 체크
+    if (selectedItems.find(selected => selected.id === item.id)) {
+      return;
+    }
+
+    // 기존 안내 메시지 제거
+    const placeholder = selectedItemsTags.querySelector('p.text-muted');
+    if (placeholder) {
+      placeholder.remove();
+    }
+
+    selectedItems.push(item);
+    const tag = createTag(item);
+    selectedItemsTags.appendChild(tag);
+
+    updateCompareButton();
   }
 
   // 이벤트 리스너
   console.log('이벤트 리스너 등록 중');
-  compareTypeSelect.addEventListener('change', () => {
-    console.log('타입 변경 이벤트 발생:', compareTypeSelect.value);
-    updateItemsList();
-  });
-  compareItemsSelect.addEventListener('change', updateCompareButton);
   compareBtn.addEventListener('click', performCompare);
   clearBtn.addEventListener('click', clearComparison);
 
-  // 데이터 로드
+  // 대분류 호버 및 클릭 이벤트
+  document.querySelectorAll('.category-column-main .category-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const category = item.dataset.category;
+      handleMainCategoryHover(category);
+    });
+    item.addEventListener('click', () => {
+      const category = item.dataset.category;
+      handleMainCategoryClick(category);
+    });
+  });
+
+  // 데이터 로드 및 초기화
   console.log('데이터 로드 시작');
   loadData();
   console.log('비교 툴 초기화 완료');
 }
-
