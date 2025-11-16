@@ -1,7 +1,8 @@
 # Apple AP 데이터
+# Apple M 시리즈 전체 모델
 
-- id: apple-m5
-  name: Apple M5
+- id: apple-m1
+  name: Apple M1
   type: AP
   manufacturer: Apple
   cores:
@@ -9,68 +10,300 @@
     efficiency: 4
     total: 8
   clock_speed:
-    base: 2.8
-    boost: 4.2
+    base: 1.8
+    boost: 3.2
     unit: GHz
-  process: 3nm
+  process: 5nm
   cache:
     l1: "192 KB"
-    l2: "16 MB"
-    l3: "32 MB"
-  tdp: 20
+    l2: "12 MB"
+    l3: "16 MB"
+  tdp: 15
   tdp_unit: W
-  release_date: "2024-10"
+  release_date: "2020-11"
   architecture: ARM
-  gpu_cores: 10
+  gpu_cores: 8
   neural_engine: "16-core"
-  memory_support: "LPDDR5X-7500"
-  max_memory: 128
+  memory_support: "LPDDR4X-4266"
+  max_memory: 16
   memory_unit: GB
   benchmarks:
     geekbench:
-      single: 3200
-      multi: 15200
+      single: 1700
+      multi: 7500
     cinebench:
-      single: 2200
-      multi: 18500
+      single: 1500
+      multi: 8000
   price: null
   price_unit: null
+  classes:
+    - laptop-class
 
-- id: apple-m4
-  name: Apple M4
+- id: apple-m1-pro
+  name: Apple M1 Pro
   type: AP
   manufacturer: Apple
   cores:
-    performance: 4
-    efficiency: 4
+    performance: 6
+    efficiency: 2
     total: 8
   clock_speed:
-    base: 2.4
-    boost: 4.0
+    base: 2.0
+    boost: 3.2
     unit: GHz
-  process: 3nm
+  process: 5nm
   cache:
     l1: "192 KB"
     l2: "16 MB"
     l3: "24 MB"
-  tdp: 18
+  tdp: 20
   tdp_unit: W
-  release_date: "2024-05"
+  release_date: "2021-10"
   architecture: ARM
-  gpu_cores: 10
+  gpu_cores: 14
   neural_engine: "16-core"
-  memory_support: "LPDDR5X-7500"
+  memory_support: "LPDDR5-6400"
+  max_memory: 32
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 12000
+    cinebench:
+      single: 1800
+      multi: 15000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m1-max
+  name: Apple M1 Max
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 8
+    efficiency: 2
+    total: 10
+  clock_speed:
+    base: 2.0
+    boost: 3.2
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "48 MB"
+  tdp: 30
+  tdp_unit: W
+  release_date: "2021-10"
+  architecture: ARM
+  gpu_cores: 32
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 64
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2500
+      multi: 12500
+    cinebench:
+      single: 1900
+      multi: 18000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m1-ultra
+  name: Apple M1 Ultra
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 16
+    efficiency: 4
+    total: 20
+  clock_speed:
+    base: 2.0
+    boost: 3.2
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "192 KB"
+    l2: "32 MB"
+    l3: "96 MB"
+  tdp: 60
+  tdp_unit: W
+  release_date: "2022-03"
+  architecture: ARM
+  gpu_cores: 64
+  neural_engine: "32-core"
+  memory_support: "LPDDR5-6400"
   max_memory: 128
   memory_unit: GB
   benchmarks:
     geekbench:
-      single: 2800
-      multi: 14200
+      single: 2500
+      multi: 24000
     cinebench:
-      single: 2100
-      multi: 17500
+      single: 1900
+      multi: 36000
   price: null
   price_unit: null
+  classes:
+    - desktop-class
+
+- id: apple-m2
+  name: Apple M2
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.0
+    boost: 3.5
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "192 KB"
+    l2: "12 MB"
+    l3: "16 MB"
+  tdp: 15
+  tdp_unit: W
+  release_date: "2022-06"
+  architecture: ARM
+  gpu_cores: 10
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 24
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 9000
+    cinebench:
+      single: 1600
+      multi: 10000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m2-pro
+  name: Apple M2 Pro
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 6
+    efficiency: 4
+    total: 10
+  clock_speed:
+    base: 2.4
+    boost: 3.5
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 20
+  tdp_unit: W
+  release_date: "2023-01"
+  architecture: ARM
+  gpu_cores: 19
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 32
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2600
+      multi: 15000
+    cinebench:
+      single: 1900
+      multi: 18000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m2-max
+  name: Apple M2 Max
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 8
+    efficiency: 4
+    total: 12
+  clock_speed:
+    base: 2.4
+    boost: 3.5
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "48 MB"
+  tdp: 30
+  tdp_unit: W
+  release_date: "2023-01"
+  architecture: ARM
+  gpu_cores: 38
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 96
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2700
+      multi: 15000
+    cinebench:
+      single: 2000
+      multi: 20000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m2-ultra
+  name: Apple M2 Ultra
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 16
+    efficiency: 8
+    total: 24
+  clock_speed:
+    base: 2.4
+    boost: 3.5
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "192 KB"
+    l2: "32 MB"
+    l3: "96 MB"
+  tdp: 60
+  tdp_unit: W
+  release_date: "2023-06"
+  architecture: ARM
+  gpu_cores: 76
+  neural_engine: "32-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 28000
+    cinebench:
+      single: 2100
+      multi: 38000
+  price: null
+  price_unit: null
+  classes:
+    - desktop-class
 
 - id: apple-m3
   name: Apple M3
@@ -107,4 +340,426 @@
       multi: 16800
   price: null
   price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m3-pro
+  name: Apple M3 Pro
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 6
+    efficiency: 6
+    total: 12
+  clock_speed:
+    base: 2.75
+    boost: 4.05
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "36 MB"
+  tdp: 27
+  tdp_unit: W
+  release_date: "2023-11"
+  architecture: ARM
+  gpu_cores: 18
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3000
+      multi: 21000
+    cinebench:
+      single: 2200
+      multi: 25000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m3-max
+  name: Apple M3 Max
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 12
+    efficiency: 4
+    total: 16
+  clock_speed:
+    base: 2.75
+    boost: 4.05
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "48 MB"
+  tdp: 45
+  tdp_unit: W
+  release_date: "2023-11"
+  architecture: ARM
+  gpu_cores: 40
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3100
+      multi: 28000
+    cinebench:
+      single: 2300
+      multi: 35000
+  price: null
+  price_unit: null
+  classes:
+    - desktop-class
+
+- id: apple-m4
+  name: Apple M4
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.4
+    boost: 4.0
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 18
+  tdp_unit: W
+  release_date: "2024-05"
+  architecture: ARM
+  gpu_cores: 10
+  neural_engine: "16-core"
+  memory_support: "LPDDR5X-7500"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    cinebench:
+      single: 2100
+      multi: 17500
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m4-pro
+  name: Apple M4 Pro
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 6
+    efficiency: 6
+    total: 12
+  clock_speed:
+    base: 2.75
+    boost: 4.0
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "36 MB"
+  tdp: 25
+  tdp_unit: W
+  release_date: "2024-11"
+  architecture: ARM
+  gpu_cores: 19
+  neural_engine: "16-core"
+  memory_support: "LPDDR5X-7500"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3100
+      multi: 22000
+    cinebench:
+      single: 2300
+      multi: 26000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: apple-m4-max
+  name: Apple M4 Max
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 12
+    efficiency: 4
+    total: 16
+  clock_speed:
+    base: 2.75
+    boost: 4.0
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "48 MB"
+  tdp: 40
+  tdp_unit: W
+  release_date: "2024-11"
+  architecture: ARM
+  gpu_cores: 40
+  neural_engine: "16-core"
+  memory_support: "LPDDR5X-7500"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 30000
+    cinebench:
+      single: 2400
+      multi: 38000
+  price: null
+  price_unit: null
+  classes:
+    - desktop-class
+
+- id: apple-m5
+  name: Apple M5
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.8
+    boost: 4.2
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "192 KB"
+    l2: "16 MB"
+    l3: "32 MB"
+  tdp: 20
+  tdp_unit: W
+  release_date: "2024-10"
+  architecture: ARM
+  gpu_cores: 10
+  neural_engine: "16-core"
+  memory_support: "LPDDR5X-7500"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 15200
+    cinebench:
+      single: 2200
+      multi: 18500
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+# iPhone용 A 시리즈 AP (iPhone 12부터)
+
+- id: apple-a14-bionic
+  name: Apple A14 Bionic
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 2
+    efficiency: 4
+    total: 6
+  clock_speed:
+    base: 1.8
+    boost: 3.0
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "128 KB"
+    l2: "8 MB"
+    l3: "16 MB"
+  tdp: 6
+  tdp_unit: W
+  release_date: "2020-10"
+  architecture: ARM
+  gpu_cores: 4
+  neural_engine: "16-core"
+  memory_support: "LPDDR4X-4266"
+  max_memory: 6
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 4000
+    cinebench:
+      single: 1400
+      multi: 5000
+  price: null
+  price_unit: null
+  classes:
+    - mobile-class
+
+- id: apple-a15-bionic
+  name: Apple A15 Bionic
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 2
+    efficiency: 4
+    total: 6
+  clock_speed:
+    base: 1.8
+    boost: 3.2
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "128 KB"
+    l2: "12 MB"
+    l3: "16 MB"
+  tdp: 6
+  tdp_unit: W
+  release_date: "2021-09"
+  architecture: ARM
+  gpu_cores: 5
+  neural_engine: "16-core"
+  memory_support: "LPDDR4X-4266"
+  max_memory: 6
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 4800
+    cinebench:
+      single: 1500
+      multi: 6000
+  price: null
+  price_unit: null
+  classes:
+    - mobile-class
+
+- id: apple-a16-bionic
+  name: Apple A16 Bionic
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 2
+    efficiency: 4
+    total: 6
+  clock_speed:
+    base: 2.0
+    boost: 3.5
+    unit: GHz
+  process: 4nm
+  cache:
+    l1: "128 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 6
+  tdp_unit: W
+  release_date: "2022-09"
+  architecture: ARM
+  gpu_cores: 5
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 6
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 5500
+    cinebench:
+      single: 1700
+      multi: 7000
+  price: null
+  price_unit: null
+  classes:
+    - mobile-class
+
+- id: apple-a17-pro
+  name: Apple A17 Pro
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 2
+    efficiency: 4
+    total: 6
+  clock_speed:
+    base: 2.1
+    boost: 3.8
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "128 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 6
+  tdp_unit: W
+  release_date: "2023-09"
+  architecture: ARM
+  gpu_cores: 6
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 8
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2200
+      multi: 6500
+    cinebench:
+      single: 1900
+      multi: 8500
+  price: null
+  price_unit: null
+  classes:
+    - mobile-class
+
+- id: apple-a18-pro
+  name: Apple A18 Pro
+  type: AP
+  manufacturer: Apple
+  cores:
+    performance: 2
+    efficiency: 4
+    total: 6
+  clock_speed:
+    base: 2.2
+    boost: 4.0
+    unit: GHz
+  process: 3nm
+  cache:
+    l1: "128 KB"
+    l2: "16 MB"
+    l3: "24 MB"
+  tdp: 6
+  tdp_unit: W
+  release_date: "2024-09"
+  architecture: ARM
+  gpu_cores: 6
+  neural_engine: "16-core"
+  memory_support: "LPDDR5-6400"
+  max_memory: 8
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 7200
+    cinebench:
+      single: 2100
+      multi: 9500
+  price: null
+  price_unit: null
+  classes:
+    - mobile-class
 

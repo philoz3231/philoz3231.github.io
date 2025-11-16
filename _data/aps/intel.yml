@@ -35,4 +35,6 @@
       multi: 42000
   price: 850000
   price_unit: KRW
+  classes:
+    - desktop-class
 

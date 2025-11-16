@@ -35,4 +35,6 @@
       multi: 12000
   price: null
   price_unit: null
+  classes:
+    - mobile-class
 

@@ -71,6 +71,16 @@ export function initCompareTool() {
     return apData.filter(ap => ap.manufacturer === manufacturer);
   }
 
+  // AP 필터링 (제조사 + class)
+  function filterAPsByManufacturerAndClass(manufacturer, apClass) {
+    return apData.filter(ap => 
+      ap.manufacturer === manufacturer && 
+      ap.classes && 
+      Array.isArray(ap.classes) && 
+      ap.classes.includes(apClass)
+    );
+  }
+
   // 실제 존재하는 AP 제조사 목록 가져오기
   function getAPManufacturers() {
     const manufacturers = new Set();
@@ -813,9 +823,9 @@ export function initCompareTool() {
       subcategoryColumn.style.display = 'flex';
       subcategoryColumn.innerHTML = '';
       
-      // items-column은 숨김 (AP는 소분류가 없음)
-      itemsColumn.style.display = 'none';
-      itemsColumn.innerHTML = '';
+      // items-column도 표시 (class를 표시하기 위해)
+      itemsColumn.style.display = 'flex';
+      itemsColumn.innerHTML = '<p class="category-placeholder">제조사를 선택하세요</p>';
       
       // 실제 데이터에서 존재하는 제조사만 가져오기
       const manufacturers = getAPManufacturers();
@@ -835,7 +845,7 @@ export function initCompareTool() {
         subcategoryColumn.innerHTML = '<p class="category-placeholder">항목이 없습니다</p>';
       }
       
-      document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">중분류를 선택하세요</p>';
+      document.getElementById('item-list-column').innerHTML = '<p class="category-placeholder">클래스를 선택하세요</p>';
     } else if (category === 'device') {
       // 디바이스는 중분류 컬럼 표시 (실제 존재하는 제조사만)
       subcategoryColumn.style.display = 'flex';
@@ -888,10 +898,51 @@ export function initCompareTool() {
     const itemListColumn = document.getElementById('item-list-column');
 
     if (category === 'ap') {
-      // AP는 중분류가 없으므로 이 함수는 호출되지 않아야 함
-      // 하지만 안전을 위해 처리
+      // AP는 class를 소분류로 표시
+      itemsColumn.style.display = 'flex';
+      itemsColumn.innerHTML = '';
+      itemListColumn.innerHTML = '<p class="category-placeholder">클래스를 선택하세요</p>';
+      
+      // 해당 제조사의 AP들을 가져와서 class 목록 추출
       const items = filterAPsByManufacturer(manufacturer);
-      showItemListInColumn(items, category);
+      const classSet = new Set();
+      
+      items.forEach(item => {
+        if (item.classes && Array.isArray(item.classes)) {
+          item.classes.forEach(cls => classSet.add(cls));
+        }
+      });
+      
+      const classes = Array.from(classSet).sort();
+      const classLabels = {
+        'mobile-class': 'Mobile',
+        'laptop-class': 'Laptop',
+        'desktop-class': 'Desktop'
+      };
+      const classTdpRanges = {
+        'mobile-class': '~10W',
+        'laptop-class': '10~35W',
+        'desktop-class': '35W+'
+      };
+      
+      if (classes.length > 0) {
+        classes.forEach(cls => {
+          const item = document.createElement('div');
+          item.className = 'category-item';
+          item.dataset.category = 'ap';
+          item.dataset.manufacturer = manufacturer;
+          item.dataset.apClass = cls;
+          item.innerHTML = `
+            <span class="category-name">${classLabels[cls] || cls}</span>
+            <span class="category-tdp-range">${classTdpRanges[cls] || ''}</span>
+          `;
+          item.addEventListener('mouseenter', () => handleAPClassHover(category, manufacturer, cls));
+          item.addEventListener('click', () => handleAPClassClick(category, manufacturer, cls));
+          itemsColumn.appendChild(item);
+        });
+      } else {
+        itemsColumn.innerHTML = '<p class="category-placeholder">클래스 정보가 없습니다</p>';
+      }
     } else if (category === 'device') {
       // 디바이스는 소분류 표시 (하위에 아이템이 있는 경우에만)
       // 아이템 목록 컬럼 초기화 (이전 호버에서 표시된 아이템 제거)
@@ -939,6 +990,28 @@ export function initCompareTool() {
 
     // 호버 처리와 동일하게 하위 항목 표시
     handleSubCategoryHover(category, manufacturer);
+  }
+
+  // AP class 호버 처리 - 아이템 목록 컬럼 표시
+  function handleAPClassHover(category, manufacturer, apClass) {
+    const items = filterAPsByManufacturerAndClass(manufacturer, apClass);
+    showItemListInColumn(items, category);
+  }
+
+  // AP class 클릭 처리
+  function handleAPClassClick(category, manufacturer, apClass) {
+    // class 활성화
+    document.querySelectorAll('#items-column .category-item').forEach(item => {
+      item.classList.remove('active');
+    });
+    const clickedItem = document.querySelector(`#items-column .category-item[data-ap-class="${apClass}"]`);
+    if (clickedItem) {
+      clickedItem.classList.add('active');
+    }
+
+    // 클릭 시 아이템 목록 컬럼에 표시 (고정)
+    const items = filterAPsByManufacturerAndClass(manufacturer, apClass);
+    showItemListInColumn(items, category);
   }
 
   // 소분류 호버 처리 (디바이스만) - 아이템 목록 컬럼 표시
