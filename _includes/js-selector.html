@@ -49,6 +49,10 @@
   {% assign urls = urls | append: ',' | append: site.data.origin[type].mermaid.js %}
 {% endif %}
 
+{% if page.url contains '/compare/' or page.content contains 'compare-tool' %}
+  {% assign urls = urls | append: ',' | append: site.data.origin[type].chartjs.js %}
+{% endif %}
+
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
