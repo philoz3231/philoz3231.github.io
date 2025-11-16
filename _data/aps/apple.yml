@@ -455,7 +455,7 @@
   price: null
   price_unit: null
   classes:
-    - laptop-class
+    - mobile-class
 
 - id: apple-m4-pro
   name: Apple M4 Pro

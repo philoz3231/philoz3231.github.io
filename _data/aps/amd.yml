@@ -1,4 +1,123 @@
 # AMD AP 데이터
+# A14 Bionic (2020-10) 이후 출시된 AMD 프로세서
+
+# Ryzen 5000 시리즈 (Zen 3, 2020-11)
+
+- id: amd-ryzen-9-5950x
+  name: AMD Ryzen 9 5950X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 16
+    efficiency: 0
+    total: 16
+  clock_speed:
+    base: 3.4
+    boost: 4.9
+    unit: GHz
+  process: 7nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "64 MB"
+  tdp: 105
+  tdp_unit: W
+  release_date: "2020-11"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR4-3200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1700
+      multi: 20000
+    cinebench:
+      single: 1600
+      multi: 30000
+  price: 800000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-7-5800x
+  name: AMD Ryzen 7 5800X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 8
+    efficiency: 0
+    total: 8
+  clock_speed:
+    base: 3.8
+    boost: 4.7
+    unit: GHz
+  process: 7nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "32 MB"
+  tdp: 105
+  tdp_unit: W
+  release_date: "2020-11"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR4-3200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1600
+      multi: 10000
+    cinebench:
+      single: 1500
+      multi: 15000
+  price: 500000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-5-5600x
+  name: AMD Ryzen 5 5600X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 6
+    efficiency: 0
+    total: 6
+  clock_speed:
+    base: 3.7
+    boost: 4.6
+    unit: GHz
+  process: 7nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "32 MB"
+  tdp: 65
+  tdp_unit: W
+  release_date: "2020-11"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR4-3200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1500
+      multi: 7000
+    cinebench:
+      single: 1400
+      multi: 11000
+  price: 350000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+# Ryzen 7000 시리즈 (Zen 4, 2022-09)
 
 - id: amd-ryzen-9-7950x
   name: AMD Ryzen 9 7950X
@@ -34,6 +153,236 @@
       single: 2200
       multi: 38000
   price: 750000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-9-7900x
+  name: AMD Ryzen 9 7900X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 12
+    efficiency: 0
+    total: 12
+  clock_speed:
+    base: 4.7
+    boost: 5.6
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "64 MB"
+  tdp: 170
+  tdp_unit: W
+  release_date: "2022-09"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2500
+      multi: 22000
+    cinebench:
+      single: 2000
+      multi: 32000
+  price: 650000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-7-7700x
+  name: AMD Ryzen 7 7700X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 8
+    efficiency: 0
+    total: 8
+  clock_speed:
+    base: 4.5
+    boost: 5.4
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "32 MB"
+  tdp: 105
+  tdp_unit: W
+  release_date: "2022-09"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2300
+      multi: 12000
+    cinebench:
+      single: 1900
+      multi: 20000
+  price: 500000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-5-7600x
+  name: AMD Ryzen 5 7600X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 6
+    efficiency: 0
+    total: 6
+  clock_speed:
+    base: 4.7
+    boost: 5.3
+    unit: GHz
+  process: 5nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "32 MB"
+  tdp: 105
+  tdp_unit: W
+  release_date: "2022-09"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2100
+      multi: 9000
+    cinebench:
+      single: 1800
+      multi: 15000
+  price: 350000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+# Ryzen 9000 시리즈 (Zen 5, 2024-08)
+
+- id: amd-ryzen-9-9950x
+  name: AMD Ryzen 9 9950X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 16
+    efficiency: 0
+    total: 16
+  clock_speed:
+    base: 4.3
+    boost: 5.7
+    unit: GHz
+  process: 4nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "64 MB"
+  tdp: 170
+  tdp_unit: W
+  release_date: "2024-08"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3000
+      multi: 30000
+    cinebench:
+      single: 2400
+      multi: 45000
+  price: 900000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-7-9700x
+  name: AMD Ryzen 7 9700X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 8
+    efficiency: 0
+    total: 8
+  clock_speed:
+    base: 4.2
+    boost: 5.5
+    unit: GHz
+  process: 4nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "32 MB"
+  tdp: 65
+  tdp_unit: W
+  release_date: "2024-08"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 15000
+    cinebench:
+      single: 2200
+      multi: 25000
+  price: 600000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: amd-ryzen-5-9600x
+  name: AMD Ryzen 5 9600X
+  type: AP
+  manufacturer: AMD
+  cores:
+    performance: 6
+    efficiency: 0
+    total: 6
+  clock_speed:
+    base: 4.4
+    boost: 5.4
+    unit: GHz
+  process: 4nm
+  cache:
+    l1: "64 KB"
+    l2: "1 MB"
+    l3: "32 MB"
+  tdp: 65
+  tdp_unit: W
+  release_date: "2024-08"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2600
+      multi: 11000
+    cinebench:
+      single: 2000
+      multi: 18000
+  price: 400000
   price_unit: KRW
   classes:
     - desktop-class

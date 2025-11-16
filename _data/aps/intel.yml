@@ -1,7 +1,242 @@
 # Intel AP 데이터
+# A14 Bionic (2020-10) 이후 출시된 Intel 프로세서
+
+# 12세대 Alder Lake (2021-11)
+
+- id: intel-core-i9-12900k
+  name: Intel Core i9-12900K (Alder Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 8
+    total: 16
+  clock_speed:
+    base: 3.2
+    boost: 5.2
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "30 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2021-11"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-4800, DDR4-3200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2000
+      multi: 18000
+    cinebench:
+      single: 1800
+      multi: 30000
+  price: 650000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i7-12700k
+  name: Intel Core i7-12700K (Alder Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 4
+    total: 12
+  clock_speed:
+    base: 3.6
+    boost: 5.0
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "25 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2021-11"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-4800, DDR4-3200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1900
+      multi: 15000
+    cinebench:
+      single: 1700
+      multi: 25000
+  price: 500000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i5-12600k
+  name: Intel Core i5-12600K (Alder Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 6
+    efficiency: 4
+    total: 10
+  clock_speed:
+    base: 3.7
+    boost: 4.9
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "20 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2021-11"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-4800, DDR4-3200"
+  max_memory: 128
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 1800
+      multi: 12000
+    cinebench:
+      single: 1600
+      multi: 20000
+  price: 350000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+# 13세대 Raptor Lake (2022-10)
+
+- id: intel-core-i9-13900k
+  name: Intel Core i9-13900K (Raptor Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 16
+    total: 24
+  clock_speed:
+    base: 3.0
+    boost: 5.8
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "36 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2022-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2500
+      multi: 25000
+    cinebench:
+      single: 2100
+      multi: 38000
+  price: 750000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i7-13700k
+  name: Intel Core i7-13700K (Raptor Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 8
+    total: 16
+  clock_speed:
+    base: 3.4
+    boost: 5.4
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "30 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2022-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2300
+      multi: 20000
+    cinebench:
+      single: 1900
+      multi: 32000
+  price: 550000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i5-13600k
+  name: Intel Core i5-13600K (Raptor Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 6
+    efficiency: 8
+    total: 14
+  clock_speed:
+    base: 3.5
+    boost: 5.1
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "24 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2022-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2100
+      multi: 16000
+    cinebench:
+      single: 1800
+      multi: 26000
+  price: 400000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+# 14세대 Raptor Lake Refresh (2023-10)
 
 - id: intel-core-i9-14900k
-  name: Intel Core i9-14900K
+  name: Intel Core i9-14900K (Raptor Lake Refresh)
   type: AP
   manufacturer: Intel
   cores:
@@ -37,4 +272,274 @@
   price_unit: KRW
   classes:
     - desktop-class
+
+- id: intel-core-i7-14700k
+  name: Intel Core i7-14700K (Raptor Lake Refresh)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 12
+    total: 20
+  clock_speed:
+    base: 3.4
+    boost: 5.6
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "33 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2023-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2400
+      multi: 22000
+    cinebench:
+      single: 2000
+      multi: 35000
+  price: 600000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i5-14600k
+  name: Intel Core i5-14600K (Raptor Lake Refresh)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 6
+    efficiency: 8
+    total: 14
+  clock_speed:
+    base: 3.5
+    boost: 5.3
+    unit: GHz
+  process: "Intel 7"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "24 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2023-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-5600, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2200
+      multi: 17000
+    cinebench:
+      single: 1900
+      multi: 28000
+  price: 420000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+# 15세대 Arrow Lake (2024-10)
+
+- id: intel-core-i9-15900k
+  name: Intel Core i9-15900K (Arrow Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 16
+    total: 24
+  clock_speed:
+    base: 3.2
+    boost: 6.2
+    unit: GHz
+  process: "Intel 20A"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "36 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2024-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-6400, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 30000
+    cinebench:
+      single: 2400
+      multi: 45000
+  price: 900000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i7-15700k
+  name: Intel Core i7-15700K (Arrow Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 8
+    efficiency: 12
+    total: 20
+  clock_speed:
+    base: 3.4
+    boost: 5.8
+    unit: GHz
+  process: "Intel 20A"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "33 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2024-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-6400, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3000
+      multi: 25000
+    cinebench:
+      single: 2200
+      multi: 38000
+  price: 700000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+- id: intel-core-i5-15600k
+  name: Intel Core i5-15600K (Arrow Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 6
+    efficiency: 8
+    total: 14
+  clock_speed:
+    base: 3.5
+    boost: 5.5
+    unit: GHz
+  process: "Intel 20A"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "24 MB"
+  tdp: 125
+  tdp_unit: W
+  release_date: "2024-10"
+  architecture: x86-64
+  gpu_cores: null
+  neural_engine: null
+  memory_support: "DDR5-6400, DDR4-3200"
+  max_memory: 192
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 20000
+    cinebench:
+      single: 2000
+      multi: 30000
+  price: 500000
+  price_unit: KRW
+  classes:
+    - desktop-class
+
+# Lunar Lake (Core Ultra 200V 시리즈, 2024-09)
+
+- id: intel-core-ultra-7-268v
+  name: Intel Core Ultra 7 268V (Lunar Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.1
+    boost: 4.8
+    unit: GHz
+  process: "Intel 18A"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "12 MB"
+  tdp: 17
+  tdp_unit: W
+  release_date: "2024-09"
+  architecture: x86-64
+  gpu_cores: "Arc GPU"
+  neural_engine: "NPU (48 TOPS)"
+  memory_support: "LPDDR5X-8533"
+  max_memory: 32
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2500
+      multi: 12000
+    cinebench:
+      single: 1900
+      multi: 15000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
+
+- id: intel-core-ultra-5-258v
+  name: Intel Core Ultra 5 258V (Lunar Lake)
+  type: AP
+  manufacturer: Intel
+  cores:
+    performance: 4
+    efficiency: 4
+    total: 8
+  clock_speed:
+    base: 2.0
+    boost: 4.5
+    unit: GHz
+  process: "Intel 18A"
+  cache:
+    l1: "32 KB"
+    l2: "2 MB"
+    l3: "12 MB"
+  tdp: 17
+  tdp_unit: W
+  release_date: "2024-09"
+  architecture: x86-64
+  gpu_cores: "Arc GPU"
+  neural_engine: "NPU (48 TOPS)"
+  memory_support: "LPDDR5X-8533"
+  max_memory: 32
+  memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2300
+      multi: 10000
+    cinebench:
+      single: 1700
+      multi: 12000
+  price: null
+  price_unit: null
+  classes:
+    - laptop-class
 
