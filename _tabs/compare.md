@@ -75,6 +75,13 @@ order: 4
   </div>
 
   <div id="compare-results" class="compare-results" style="display: none;">
+    <div class="compare-benchmarks-wrapper mb-4">
+      <h3 class="mb-3">벤치마크 비교</h3>
+      <div id="benchmarks-container" class="benchmarks-container">
+        <!-- Benchmarks will be rendered here -->
+      </div>
+    </div>
+
     <div class="compare-table-wrapper mb-4">
       <h3 class="mb-3">{{ site.data.locales[site.lang].compare.specs_table | default: "스펙 비교표" }}</h3>
       <div class="table-responsive">
@@ -84,15 +91,6 @@ order: 4
           <tbody id="compare-table-body">
           </tbody>
         </table>
-      </div>
-    </div>
-
-    <div class="compare-charts-wrapper">
-      <h3 class="mb-3">{{ site.data.locales[site.lang].compare.charts | default: "스펙 차트" }}</h3>
-      <div class="row g-4">
-        <div id="chart-container" class="col-12">
-          <!-- Charts will be rendered here -->
-        </div>
       </div>
     </div>
   </div>

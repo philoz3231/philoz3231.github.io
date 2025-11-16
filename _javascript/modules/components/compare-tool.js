@@ -150,8 +150,8 @@ export function initCompareTool() {
       return;
     }
 
+    renderBenchmarks();
     renderComparisonTable();
-    renderCharts();
     compareResults.style.display = 'block';
     clearBtn.disabled = false;
   }
@@ -207,7 +207,6 @@ export function initCompareTool() {
   // AP 스펙 목록
   function getAPSpecs() {
     return [
-      { key: 'manufacturer', label: '제조사' },
       { key: 'cores.total', label: '총 코어 수' },
       { key: 'cores.performance', label: '성능 코어' },
       { key: 'cores.efficiency', label: '효율 코어' },
@@ -220,30 +219,34 @@ export function initCompareTool() {
       { key: 'architecture', label: '아키텍처' },
       { key: 'gpu_cores', label: 'GPU' },
       { key: 'neural_engine', label: 'Neural Engine' },
-      { key: 'max_memory', label: '최대 메모리' }
+      { key: 'max_memory', label: '최대 메모리' },
+      { key: 'price', label: '가격' }
     ];
   }
 
   // 기기 스펙 목록
   function getDeviceSpecs() {
     return [
-      { key: 'manufacturer', label: '제조사' },
-      { key: 'category', label: '카테고리' },
+      { key: 'release_date', label: '출시일' },
+      { key: 'price', label: '가격' },
+      { key: 'cpu', label: 'CPU' },
+      { key: 'gpu', label: 'GPU' },
+      { key: 'memory', label: '메모리' },
+      { key: 'storage', label: '저장공간' },
       { key: 'display.size', label: '화면 크기' },
       { key: 'display.resolution', label: '해상도' },
       { key: 'display.type', label: '화면 타입' },
       { key: 'display.refresh_rate', label: '주사율' },
       { key: 'battery.capacity', label: '배터리' },
-      { key: 'memory', label: '메모리' },
-      { key: 'storage', label: '저장공간' },
-      { key: 'cpu', label: 'CPU' },
-      { key: 'gpu', label: 'GPU' },
+      { key: 'charging.wired_max', label: '유선 충전 속도' },
+      { key: 'charging.wireless_max', label: '무선 충전 속도' },
       { key: 'camera.rear', label: '후면 카메라' },
       { key: 'camera.front', label: '전면 카메라' },
-      { key: 'os', label: '운영체제' },
+      { key: 'connectivity.bluetooth', label: 'Bluetooth' },
+      { key: 'connectivity.wifi', label: 'Wi-Fi' },
+      { key: 'connectivity.cellular', label: 'Cellular' },
       { key: 'weight', label: '무게' },
-      { key: 'dimensions', label: '크기' },
-      { key: 'release_date', label: '출시일' }
+      { key: 'dimensions', label: '크기' }
     ];
   }
 
@@ -305,6 +308,24 @@ export function initCompareTool() {
     }
 
     if (value !== null && value !== undefined) {
+      // 가격 포맷팅
+      if (key === 'price' && typeof value === 'number') {
+        const priceUnit = item.price_unit || 'KRW';
+        return `${value.toLocaleString()} ${priceUnit}`;
+      }
+      
+      // 충전 속도 포맷팅
+      if (key === 'charging.wired_max' || key === 'charging.wireless_max') {
+        const chargingParent = keys.length > 1 ? (item.charging || {}) : {};
+        const chargingUnit = key === 'charging.wired_max' 
+          ? (chargingParent.wired_unit || 'W')
+          : (chargingParent.wireless_unit || 'W');
+        if (typeof value === 'number') {
+          return `${value} ${chargingUnit}`;
+        }
+        return value ? `${value} ${chargingUnit}` : '-';
+      }
+      
       if (typeof value === 'number') {
         return unit ? `${value} ${unit}` : value.toString();
       }
@@ -315,6 +336,203 @@ export function initCompareTool() {
     }
 
     return null;
+  }
+
+  // 벤치마크 렌더링
+  function renderBenchmarks() {
+    const container = document.getElementById('benchmarks-container');
+    if (!container) return;
+    
+    container.innerHTML = '';
+
+    if (selectedItems.length === 0) return;
+
+    // Single core 기준으로 정렬
+    const sortedItems = [...selectedItems].sort((a, b) => {
+      const aScore = a.benchmarks?.geekbench?.single || 0;
+      const bScore = b.benchmarks?.geekbench?.single || 0;
+      return aScore - bScore;
+    });
+
+    // AP 벤치마크
+    if (currentMainCategory === 'ap') {
+      renderAPBenchmarks(container, sortedItems);
+    } else {
+      // Device 벤치마크
+      renderDeviceBenchmarks(container, sortedItems);
+    }
+  }
+
+  // AP 벤치마크 렌더링
+  function renderAPBenchmarks(container, sortedItems) {
+    // Geekbench Single
+    const geekbenchSingle = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.geekbench?.single || 0
+    }));
+    if (geekbenchSingle.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, 'Geekbench Single-Core Score', geekbenchSingle);
+    }
+
+    // Geekbench Multi
+    const geekbenchMulti = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.geekbench?.multi || 0
+    }));
+    if (geekbenchMulti.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, 'Geekbench Multi-Core Score', geekbenchMulti);
+    }
+
+    // Cinebench Single
+    const cinebenchSingle = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.cinebench?.single || 0
+    }));
+    if (cinebenchSingle.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, 'Cinebench Single-Core Score', cinebenchSingle);
+    }
+
+    // Cinebench Multi
+    const cinebenchMulti = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.cinebench?.multi || 0
+    }));
+    if (cinebenchMulti.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, 'Cinebench Multi-Core Score', cinebenchMulti);
+    }
+  }
+
+  // Device 벤치마크 렌더링
+  function renderDeviceBenchmarks(container, sortedItems) {
+    // Geekbench Single
+    const geekbenchSingle = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.geekbench?.single || 0
+    }));
+    if (geekbenchSingle.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, 'Geekbench Single-Core Score', geekbenchSingle);
+    }
+
+    // Geekbench Multi
+    const geekbenchMulti = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.geekbench?.multi || 0
+    }));
+    if (geekbenchMulti.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, 'Geekbench Multi-Core Score', geekbenchMulti);
+    }
+
+    // 3DMark Wild Life Extreme
+    const mark3d = sortedItems.map(item => ({
+      name: item.name,
+      score: item.benchmarks?.['3dmark_wild_life_extreme'] || 0
+    }));
+    if (mark3d.some(item => item.score > 0)) {
+      renderBenchmarkSection(container, '3DMark Wild Life Extreme', mark3d);
+    }
+  }
+
+  // 벤치마크 섹션 렌더링
+  function renderBenchmarkSection(container, title, items) {
+    const section = document.createElement('div');
+    section.className = 'benchmark-section mb-4';
+    
+    const titleEl = document.createElement('h4');
+    titleEl.className = 'mb-3';
+    titleEl.textContent = title;
+    section.appendChild(titleEl);
+
+    // 최저 점수와 최대 점수 찾기
+    const validScores = items.map(item => item.score).filter(score => score > 0);
+    const minScore = Math.min(...validScores);
+    const maxScore = Math.max(...validScores);
+    const maxPercentage = (maxScore / minScore) * 100;
+    
+    // 가장 긴 제품명 길이 계산 (고정 너비 설정용)
+    const maxNameLength = Math.max(...items.map(item => item.name.length));
+    const nameWidth = Math.max(120, maxNameLength * 8); // 최소 120px, 글자당 약 8px
+    
+    // 아이템별 색상 배열
+    const colors = [
+      '#4ECDC4', // 민트
+      '#6c757d', // 회색
+      '#3498db', // 파란색
+      '#e74c3c', // 빨간색
+      '#f39c12', // 주황색
+      '#9b59b6', // 보라색
+      '#1abc9c', // 청록색
+      '#e67e22', // 갈색
+      '#34495e', // 어두운 회색
+      '#16a085'  // 진한 청록색
+    ];
+    
+    // 각 제품을 세로로 나열
+    items.forEach((item, index) => {
+      if (item.score <= 0) return;
+      
+      const itemContainer = document.createElement('div');
+      itemContainer.className = 'benchmark-item mb-2';
+      
+      const percentage = (item.score / minScore) * 100;
+      
+      // 제품명과 점수 표시
+      const labelContainer = document.createElement('div');
+      labelContainer.style.display = 'flex';
+      labelContainer.style.alignItems = 'center';
+      labelContainer.style.marginBottom = '0.25rem';
+      
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = item.name;
+      nameSpan.style.fontWeight = '500';
+      nameSpan.style.marginRight = '0.5rem';
+      nameSpan.style.width = `${nameWidth}px`;
+      nameSpan.style.flexShrink = '0';
+      labelContainer.appendChild(nameSpan);
+      
+      // 가로 막대 (모든 막대가 같은 컨테이너 너비 사용)
+      const barContainer = document.createElement('div');
+      barContainer.style.position = 'relative';
+      barContainer.style.flex = '1';
+      barContainer.style.height = '32px';
+      barContainer.style.backgroundColor = 'transparent';
+      barContainer.style.borderRadius = '4px';
+      barContainer.style.overflow = 'visible';
+      
+      const bar = document.createElement('div');
+      bar.style.position = 'absolute';
+      bar.style.left = '0';
+      bar.style.top = '0';
+      bar.style.height = '100%';
+      // 최대 퍼센트를 기준으로 정규화하여 모든 막대가 같은 시작점에서 시작하도록
+      bar.style.width = `${(percentage / maxPercentage) * 100}%`;
+      const barColor = colors[index % colors.length];
+      bar.style.backgroundColor = barColor;
+      bar.style.transition = 'width 0.3s ease';
+      bar.style.borderRadius = '4px';
+      
+      // 점수와 퍼센트 텍스트
+      const textSpan = document.createElement('span');
+      textSpan.style.position = 'absolute';
+      textSpan.style.left = '8px';
+      textSpan.style.top = '50%';
+      textSpan.style.transform = 'translateY(-50%)';
+      // 색상에 따라 텍스트 색상 조정 (밝은 색상은 어두운 텍스트, 어두운 색상은 밝은 텍스트)
+      const isLightColor = ['#4ECDC4', '#3498db', '#1abc9c', '#16a085', '#f39c12', '#e67e22'].includes(barColor);
+      textSpan.style.color = isLightColor ? '#333' : '#fff';
+      textSpan.style.fontSize = '0.875rem';
+      textSpan.style.fontWeight = '500';
+      textSpan.style.zIndex = '1';
+      textSpan.textContent = `${item.score.toLocaleString()} (${percentage.toFixed(1)}%)`;
+      
+      barContainer.appendChild(bar);
+      barContainer.appendChild(textSpan);
+      labelContainer.appendChild(barContainer);
+      
+      itemContainer.appendChild(labelContainer);
+      section.appendChild(itemContainer);
+    });
+    
+    container.appendChild(section);
   }
 
   // 차트 렌더링

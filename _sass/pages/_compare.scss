@@ -330,6 +330,7 @@
         width: 100%;
         margin-bottom: 0;
         background-color: var(--main-bg);
+        border-bottom: 1px solid var(--card-border-color);
 
         thead {
           background-color: var(--card-bg);
@@ -353,6 +354,8 @@
         }
 
         tbody {
+          border-bottom: 1px solid var(--card-border-color);
+
           tr {
             border-bottom: 1px solid var(--card-border-color);
             transition: background-color 0.2s ease;
@@ -362,7 +365,11 @@
             }
 
             &:last-child {
-              border-bottom: none;
+              border-bottom: 1px solid var(--card-border-color) !important;
+
+              td {
+                border-bottom: 1px solid var(--card-border-color) !important;
+              }
             }
           }
 
@@ -388,20 +395,41 @@
       }
     }
 
-    .compare-charts-wrapper {
+    .compare-benchmarks-wrapper {
       background: var(--card-bg);
       border: 1px solid var(--card-border-color);
       border-radius: 0.5rem;
       padding: 1.5rem;
       margin-top: 1.5rem;
 
-      #chart-container {
-        canvas {
-          max-height: 400px;
-          margin-bottom: 2rem;
+      .benchmark-section {
+        margin-bottom: 2.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h4 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: var(--main-color-text);
+          margin-bottom: 1rem;
+        }
+
+        .benchmark-item {
+          margin-bottom: 0.75rem;
 
           &:last-child {
             margin-bottom: 0;
+          }
+
+          > div {
+            display: flex;
+            align-items: center;
+
+            > span:first-child {
+              flex-shrink: 0;
+            }
           }
         }
       }

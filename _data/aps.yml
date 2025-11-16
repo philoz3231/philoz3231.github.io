@@ -27,6 +27,15 @@
   memory_support: "LPDDR5X-7500"
   max_memory: 128
   memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 15200
+    cinebench:
+      single: 2200
+      multi: 18500
+  price: null
+  price_unit: null
 
 - id: apple-m4
   name: Apple M4
@@ -54,6 +63,15 @@
   memory_support: "LPDDR5X-7500"
   max_memory: 128
   memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    cinebench:
+      single: 2100
+      multi: 17500
+  price: null
+  price_unit: null
 
 - id: apple-m3
   name: Apple M3
@@ -81,6 +99,15 @@
   memory_support: "LPDDR5-6400"
   max_memory: 128
   memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2700
+      multi: 13800
+    cinebench:
+      single: 2000
+      multi: 16800
+  price: null
+  price_unit: null
 
 - id: intel-core-i9-14900k
   name: Intel Core i9-14900K
@@ -108,6 +135,15 @@
   memory_support: "DDR5-5600, DDR4-3200"
   max_memory: 192
   memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 3100
+      multi: 28500
+    cinebench:
+      single: 2300
+      multi: 42000
+  price: 850000
+  price_unit: KRW
 
 - id: amd-ryzen-9-7950x
   name: AMD Ryzen 9 7950X
@@ -135,6 +171,15 @@
   memory_support: "DDR5-5200"
   max_memory: 128
   memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 26500
+    cinebench:
+      single: 2200
+      multi: 38000
+  price: 750000
+  price_unit: KRW
 
 - id: snapdragon-8-gen-3
   name: Snapdragon 8 Gen 3
@@ -162,4 +207,13 @@
   memory_support: "LPDDR5X-4800"
   max_memory: 24
   memory_unit: GB
+  benchmarks:
+    geekbench:
+      single: 2200
+      multi: 6800
+    cinebench:
+      single: 1500
+      multi: 12000
+  price: null
+  price_unit: null
 

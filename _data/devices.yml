@@ -34,6 +34,20 @@
   weight: 221
   weight_unit: g
   dimensions: "159.9 x 76.7 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 7200
+    "3dmark_wild_life_extreme": 4200
   price: 1590000
   price_unit: KRW
 
@@ -71,6 +85,20 @@
   weight: 187
   weight_unit: g
   dimensions: "146.6 x 70.6 x 8.25 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 27
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2900
+      multi: 7200
+    "3dmark_wild_life_extreme": 4200
   price: 1350000
   price_unit: KRW
 
@@ -107,6 +135,20 @@
   weight: 233
   weight_unit: g
   dimensions: "162.3 x 79.0 x 8.6 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 7 (802.11be)"
+    cellular: "5G (sub-6GHz and mmWave)"
+  charging:
+    wired_max: 45
+    wired_unit: W
+    wireless_max: 15
+    wireless_unit: W
+  benchmarks:
+    geekbench:
+      single: 2200
+      multi: 6800
+    "3dmark_wild_life_extreme": 3800
   price: 1490000
   price_unit: KRW
 
@@ -144,6 +186,20 @@
   weight: 579
   weight_unit: g
   dimensions: "281.5 x 215.5 x 5.1 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 35
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    "3dmark_wild_life_extreme": null
   price: 1690000
   price_unit: KRW
 
@@ -181,6 +237,20 @@
   weight: 444
   weight_unit: g
   dimensions: "247.6 x 178.5 x 5.1 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: "5G (sub-6GHz)"
+  charging:
+    wired_max: 35
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 2800
+      multi: 14200
+    "3dmark_wild_life_extreme": null
   price: 1290000
   price_unit: KRW
 
@@ -224,6 +294,20 @@
   weight: 2190
   weight_unit: g
   dimensions: "355.7 x 248.1 x 16.8 mm"
+  connectivity:
+    bluetooth: "5.3"
+    wifi: "Wi-Fi 6E (802.11ax)"
+    cellular: null
+  charging:
+    wired_max: 140
+    wired_unit: W
+    wireless_max: null
+    wireless_unit: null
+  benchmarks:
+    geekbench:
+      single: 3200
+      multi: 21000
+    "3dmark_wild_life_extreme": null
   price: 4990000
   price_unit: KRW
 
