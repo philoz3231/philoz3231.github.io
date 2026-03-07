@@ -1,0 +1,4 @@
+interface:
+  display_name: "모바일 블로그 작성기"
+  short_description: "메모와 이미지를 공개용 블로그 글로 정리하는 스킬"
+  default_prompt: "Use $mobile-blog-writer to turn my rough notes and images into a publishable Jekyll blog post."
