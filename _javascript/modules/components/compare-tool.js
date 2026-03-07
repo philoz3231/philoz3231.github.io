@@ -36,6 +36,124 @@ export function initCompareTool() {
   let dataLoaded = false;
   let currentMainCategory = null; // 현재 선택된 대분류
 
+  function parseNumeric(value) {
+    if (value === null || value === undefined || value === '') {
+      return null;
+    }
+
+    if (typeof value === 'number') {
+      return Number.isNaN(value) ? null : value;
+    }
+
+    const parsed = Number(value);
+    return Number.isNaN(parsed) ? null : parsed;
+  }
+
+  function parseListOrScalar(value) {
+    if (value === null || value === undefined || value === '') {
+      return null;
+    }
+
+    if (Array.isArray(value)) {
+      return value;
+    }
+
+    if (typeof value !== 'string') {
+      return value;
+    }
+
+    const items = value
+      .split('|')
+      .map(item => item.trim())
+      .filter(Boolean)
+      .map(item => {
+        const parsed = parseNumeric(item);
+        return parsed ?? item;
+      });
+
+    if (items.length === 0) {
+      return null;
+    }
+
+    return items.length === 1 ? items[0] : items;
+  }
+
+  function normalizeString(value) {
+    if (value === null || value === undefined || value === '') {
+      return null;
+    }
+
+    return value;
+  }
+
+  function parseDeviceRow(row) {
+    if (!row || typeof row !== 'object') {
+      return row;
+    }
+
+    if ('display' in row || !('display_size' in row)) {
+      return row;
+    }
+
+    return {
+      id: row.id,
+      name: row.name,
+      type: row.type,
+      manufacturer: row.manufacturer,
+      category: row.category,
+      release_date: normalizeString(row.release_date),
+      price: parseNumeric(row.price),
+      price_unit: normalizeString(row.price_unit),
+      cpu: normalizeString(row.cpu),
+      gpu: normalizeString(row.gpu),
+      os: normalizeString(row.os),
+      memory: parseListOrScalar(row.memory),
+      memory_unit: normalizeString(row.memory_unit),
+      storage: parseListOrScalar(row.storage),
+      storage_unit: normalizeString(row.storage_unit),
+      display: {
+        size: parseNumeric(row.display_size),
+        unit: normalizeString(row.display_unit),
+        resolution: normalizeString(row.display_resolution),
+        type: normalizeString(row.display_type),
+        refresh_rate: parseNumeric(row.display_refresh_rate),
+        refresh_rate_unit: normalizeString(row.display_refresh_rate_unit)
+      },
+      battery: {
+        capacity: parseNumeric(row.battery_capacity),
+        unit: normalizeString(row.battery_unit),
+        charging: normalizeString(row.battery_charging)
+      },
+      charging: {
+        wired_max: parseNumeric(row.charging_wired_max),
+        wired_unit: normalizeString(row.charging_wired_unit),
+        wireless_max: parseNumeric(row.charging_wireless_max),
+        wireless_unit: normalizeString(row.charging_wireless_unit)
+      },
+      camera: {
+        rear: normalizeString(row.camera_rear),
+        front: normalizeString(row.camera_front)
+      },
+      connectivity: {
+        bluetooth: normalizeString(row.connectivity_bluetooth),
+        wifi: normalizeString(row.connectivity_wifi),
+        cellular: normalizeString(row.connectivity_cellular)
+      },
+      weight: parseNumeric(row.weight),
+      weight_unit: normalizeString(row.weight_unit),
+      dimensions: normalizeString(row.dimensions),
+      benchmarks: {
+        geekbench: {
+          single: parseNumeric(row.benchmarks_geekbench_single),
+          multi: parseNumeric(row.benchmarks_geekbench_multi)
+        },
+        '3dmark_wild_life_extreme': parseNumeric(
+          row.benchmarks_3dmark_wild_life_extreme
+        )
+      }
+    };
+  }
+
   // 데이터 로드
   function loadData() {
     const dataScript = document.getElementById('compare-data');
@@ -53,7 +171,9 @@ export function initCompareTool() {
 
       const data = JSON.parse(scriptContent);
       apData = Array.isArray(data.aps) ? data.aps : [];
-      deviceData = Array.isArray(data.devices) ? data.devices : [];
+      deviceData = Array.isArray(data.devices)
+        ? data.devices.map(parseDeviceRow)
+        : [];
       dataLoaded = true;
       
       console.log('데이터 로드 완료:', { 
