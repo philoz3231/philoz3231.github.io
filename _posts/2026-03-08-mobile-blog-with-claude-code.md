@@ -37,7 +37,7 @@ Claude Code는 웹 브라우저에서 세션을 유지할 수 있다. PC 없이 
 3. 인터뷰 형식으로 살을 붙여 초안 완성
 4. `_posts`에 바로 저장 및 커밋
 
-![모바일에서 Claude Code로 블로그 초안을 작성하는 화면](/assets/img/mobile-claude-code-blog.png)
+<img src="/assets/img/mobile-claude-code-blog.png" alt="모바일에서 Claude Code로 블로그 초안을 작성하는 화면" width="320" />
 
 PC를 열지 않아도 이동 중에 대화하듯 초안을 완성할 수 있다.
 마크다운 문법이나 파일 구조를 직접 다룰 필요가 없다.
