@@ -2,7 +2,7 @@
 layout: post
 title: 에이전트 기반 개발은 왜 자율주행에 비유하면 어긋나는가
 description: 에이전트 기반 개발은 자율주행처럼 보이지만, 실제 소프트웨어 개발은 제어 지점과 유지보수 책임이 훨씬 더 많다.
-image: /assets/blog/2026/agentic-development-vs-autonomous-driving-cover.png
+image: /assets/blog/2026/2026-03-29-agentic-development-is-not-self-driving.png
 tags: [ai, agentic-development, software-engineering]
 categories: [blog]
 ---
